@@ -1,0 +1,43 @@
+.buyBox{
+	border:1px solid $red;
+	@include rounded;
+	.cityLogo{
+		text-align:center;margin:10px 0 0 0;
+		img{height:60px;}
+	}
+	.reviews{
+		text-align:center;margin:6px 0 0 0;font-size:12px;font-weight:bold;
+		img{vertical-align:middle;}
+		.reviewCount{font-weight:normal;font-size:10px;}
+	}
+	.ageGroup{
+		margin:0 20px;
+		border-bottom:1px solid $gray-medium;
+	}
+}
+
+
+
+
+@include screen(320px, 479px)
+{
+	.buyBox{
+		.cityLogo{
+			img{height:40px;}
+		}
+	}
+}
+@include min-screen(480px)
+{
+	.buyBox{
+		.cityLogo{
+			img{height:50px;}
+		}
+	}
+}
+@include min-screen(768px)
+{
+}
+@include min-screen(1024px)
+{
+}

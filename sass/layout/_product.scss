@@ -1,0 +1,47 @@
+.product{
+	margin:20px;
+	.atf{
+		width:100%;
+		.carousel{float:left;}
+		.buyBox{float:left;}		
+	}
+}
+
+
+
+@include screen(320px, 479px)
+{
+	.product{
+		.atf{
+			.carousel{@include clear;width:100%;}
+			.buyBox{@include clear;width:100%;}
+		}
+	}
+}
+@include min-screen(480px)
+{
+	.product{
+		.atf{
+			.carousel{width:49%;}
+			.buyBox{width:49%;}
+		}
+	}
+}
+@include min-screen(768px)
+{
+	.product{
+		.atf{
+			.carousel{width:59%;}
+			.buyBox{width:39%;}
+		}
+	}
+}
+@include min-screen(1024px)
+{
+	.product{
+		.atf{
+			.carousel{width:69%;}
+			.buyBox{width:29%;}
+		}
+	}
+}

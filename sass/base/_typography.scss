@@ -1,0 +1,103 @@
+$font-stack:    Helvetica, sans-serif;
+
+body{font:100% $font-stack;}
+a{
+	color:$blue;text-decoration:none;
+	&:hover{text-decoration:underline;}
+}
+
+// Font weights
+$light:		300;
+$regular:	400;
+$bold:		700;
+
+// Base Font
+$base-font-weight:	$regular;
+$base-font-size:		16px;
+$base-line-height:	1.4;
+
+// Headlines
+$h1-size: 	$base-font-size + 22px;
+$h2-size: 	$base-font-size + 10px;
+$h3-size: 	$base-font-size + 4px;
+$h4-size: 	$base-font-size + 2px;
+$h5-size: 	$base-font-size + 1px;
+$pSmall-size: 	$base-font-size - 2px;
+
+$h1-height: $base-line-height + .6;
+$h2-height: $base-line-height + .4;
+$h3-height: $base-line-height + .2;
+$h4-height: $base-line-height + .1;
+$h5-height: $base-line-height + .05;
+$pSmall-height: 	$base-font-size - 1.5px;
+
+$p-base: 		$base-line-height * 8.75;
+$p-small: 	$base-line-height * 8.75;
+$mouse-size:$base-font-size * .8;
+
+h1, h2, h3, h4, h5, p{color:$black;}
+h1{font-size:$h1-size;line-height:$h1-height;}
+h2{font-size:$h2-size;line-height:$h2-height;}
+h3{font-size:$h3-size;line-height:$h3-height;}
+h4{font-size:$h4-size;line-height:$h4-height;}
+h5{font-size:$h5-size;line-height:$h5-height;}
+p{font-size:$base-font-size;line-height:$base-line-height;margin-bottom:$p-base;}
+.psmall{font-size:$pSmall-size;line-height:$pSmall-height;}
+blockquote{font-size:$base-font-size;line-height:$base-line-height;font-style:italic;border-left:2px solid $blue;margin:0 0 0 6px;padding:0 0 0 6px;}
+.mouse{font-size:$mouse-size;line-height:$base-line-height;font-style:italic;}
+
+// Handheld
+
+// Larger Screens
+
+
+@include screen(320px, 479px)
+{
+	.buyBox{
+		.cityLogo{
+			img{height:40px;}
+		}
+	}
+}
+@include min-screen(480px)
+{
+	.buyBox{
+		.cityLogo{
+			img{height:50px;}
+		}
+	}
+}
+@include min-screen(768px)
+{
+	$h1-min-size: 	$h1-size * .9;
+	$h2-min-size: 	$h2-size * .9;
+	$h3-min-size: 	$h3-size * .9;
+	$h4-min-size: 	$h4-size * .9;
+	$h5-min-size: 	$h5-size * .9;
+
+	$h1-min-height: $h1-height * .9;
+	$h2-min-height: $h2-height * .9;
+	$h3-min-height: $h3-height * .9;
+	$h4-min-height: $h4-height * .9;
+	$h5-min-height: $h5-height * .9;
+
+	$p-min-size:		$base-font-size * .9;
+	$p-min-height: 	$p-base * .14;
+}
+@include min-screen(1024px)
+{
+	$h1-max-size: 	$h1-size * 1.25;
+	$h2-max-size: 	$h2-size * 1.25;
+	$h3-max-size: 	$h3-size * 1.25;
+	$h4-max-size: 	$h4-size * 1.25;
+	$h5-max-size: 	$h5-size * 1.25;
+
+	$h1-max-height: $h1-height * 1.25;
+	$h2-max-height: $h2-height * 1.25;
+	$h3-max-height: $h3-height * 1.25;
+	$h4-max-height: $h4-height * 1.25;
+	$h5-max-height: $h5-height * 1.25;
+
+	$p-max-size:		$base-font-size * 1.25;
+	$p-max-height: 	$p-base * .13;
+}
