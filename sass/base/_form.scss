@@ -1,0 +1,32 @@
+/* input[type=checkbox]{outline:1px solid $blue;margin:0;border:none;box-shadow:none;} */
+
+.btn{background-color:$blue;@include rounded;text-align:center;color:$white;text-transform:uppercase;}
+.buy{
+	line-height:40px;
+	.btnCount{font-size:14px;font-weight:normal;white-space:nowrap;}
+}
+
+
+
+@include screen(320px, 479px)
+{
+}
+@include min-screen(480px)
+{
+	.product{
+		.buyBox{
+			.buyBoxPadding{
+				.nav{
+					.buy{line-height:30px;}
+					.btnCount{font-size:12px;}
+				}
+			}
+		}
+	}
+}
+@include min-screen(768px)
+{
+}
+@include min-screen(1024px)
+{
+}

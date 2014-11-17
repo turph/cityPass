@@ -1,6 +1,6 @@
 $font-stack:    Helvetica, sans-serif;
 
-body{font:100% $font-stack;}
+body{font:100% $font-stack;@include font-smoothing(on);}
 a{
 	color:$blue;text-decoration:none;
 	&:hover{text-decoration:underline;}

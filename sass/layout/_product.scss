@@ -6,7 +6,8 @@
 		.buyBox{float:left;}		
 	}
 }
-
+.price{color:$orange;}
+.save{color:$red;}
 
 
 @include screen(320px, 479px)

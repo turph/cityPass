@@ -45,11 +45,35 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+/* input[type=checkbox]{outline:1px solid $blue;margin:0;border:none;box-shadow:none;} */
+.btn {
+  background-color: #3c8bd3;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase; }
+
+.buy {
+  line-height: 40px; }
+  .buy .btnCount {
+    font-size: 14px;
+    font-weight: normal;
+    white-space: nowrap; }
+
+@media screen and (min-width: 480px) {
+  .product .buyBox .buyBoxPadding .nav .buy {
+    line-height: 30px; }
+  .product .buyBox .buyBoxPadding .nav .btnCount {
+    font-size: 12px; } }
 body {
-  font: 100% Helvetica, sans-serif; }
+  font: 100% Helvetica, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto; }
 
 a {
-  color: #2f6fa8;
+  color: #3c8bd3;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -90,7 +114,7 @@ blockquote {
   font-size: 16px;
   line-height: 1.4;
   font-style: italic;
-  border-left: 2px solid #2f6fa8;
+  border-left: 2px solid #3c8bd3;
   margin: 0 0 0 6px;
   padding: 0 0 0 6px; }
 
@@ -113,6 +137,12 @@ blockquote {
       float: left; }
     .product .atf .buyBox {
       float: left; }
+
+.price {
+  color: #ff9900; }
+
+.save {
+  color: #CF534D; }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .product .atf .carousel {
@@ -141,28 +171,148 @@ blockquote {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px; }
-  .buyBox .cityLogo {
-    text-align: center;
-    margin: 10px 0 0 0; }
-    .buyBox .cityLogo img {
-      height: 60px; }
-  .buyBox .reviews {
-    text-align: center;
-    margin: 6px 0 0 0;
-    font-size: 12px;
-    font-weight: bold; }
-    .buyBox .reviews img {
-      vertical-align: middle; }
-    .buyBox .reviews .reviewCount {
+  .buyBox .buyBoxPadding {
+    padding: 10px 20px 15px 20px; }
+    .buyBox .buyBoxPadding .cityLogo {
+      text-align: center; }
+    .buyBox .buyBoxPadding .reviews {
+      text-align: center;
+      margin: 6px 0 0 0;
+      font-size: 12px;
+      font-weight: bold; }
+      .buyBox .buyBoxPadding .reviews img {
+        vertical-align: middle; }
+      .buyBox .buyBoxPadding .reviews .reviewCount {
+        font-weight: normal;
+        font-size: 10px; }
+    .buyBox .buyBoxPadding .ageGroup {
+      margin: 0;
+      padding: 8px 0;
+      border-bottom: 1px solid #ededed;
+      display: table;
+      width: 100%; }
+      .buyBox .buyBoxPadding .ageGroup .age, .buyBox .buyBoxPadding .ageGroup .price, .buyBox .buyBoxPadding .ageGroup .quantity {
+        display: table-cell;
+        vertical-align: bottom; }
+      .buyBox .buyBoxPadding .ageGroup .price, .buyBox .buyBoxPadding .ageGroup .quantity {
+        text-align: right; }
+      .buyBox .buyBoxPadding .ageGroup .age {
+        font-weight: bold; }
+      .buyBox .buyBoxPadding .ageGroup .save {
+        margin: 0 0 0 5px;
+        display: block;
+        font-weight: normal; }
+      .buyBox .buyBoxPadding .ageGroup .price {
+        margin: 0 0 0 15px;
+        font-weight: bold; }
+    .buyBox .buyBoxPadding .addOns .title {
+      color: #666666;
+      text-transform: uppercase; }
+    .buyBox .buyBoxPadding .addOns .addOn {
+      font-weight: bold;
+      font-size: 14px;
+      margin: 10px 0; }
+      .buyBox .buyBoxPadding .addOns .addOn input {
+        float: left;
+        margin: 5px 0 0 0; }
+      .buyBox .buyBoxPadding .addOns .addOn .addOnLabel {
+        margin: 0 0 0 20px;
+        color: #404040; }
+      .buyBox .buyBoxPadding .addOns .addOn .addOn_ages {
+        display: block;
+        font-size: 12px;
+        font-weight: normal; }
+        .buyBox .buyBoxPadding .addOns .addOn .addOn_ages .price {
+          font-weight: bold; }
+    .buyBox .buyBoxPadding .total {
+      padding: 5px 0 0 0;
+      border-top: 1px solid #878787;
+      text-align: right;
+      text-transform: capitalize;
+      color: #878787; }
+      .buyBox .buyBoxPadding .total .totalPrice {
+        margin: 0 0 0 5px;
+        font-weight: bold; }
+    .buyBox .buyBoxPadding .nav {
+      margin: 20px 0 0 0; }
+  .buyBox .buyBoxFooter {
+    padding: 5px 10px;
+    border-top: 1px solid #878787;
+    background-color: #ededed; }
+    .buyBox .buyBoxFooter .currency {
+      font-size: 12px;
+      text-align: center;
+      color: #878787;
       font-weight: normal;
-      font-size: 10px; }
-  .buyBox .ageGroup {
-    margin: 0 20px;
-    border-bottom: 1px solid #878787; }
+      text-transform: capitalize; }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .buyBox .cityLogo img {
-    height: 40px; } }
+  .cityLogo img {
+    height: 40px; }
+
+  .age {
+    font-size: 14px; }
+
+  .save {
+    font-size: 12px; }
+
+  .price, .totalPrice {
+    font-size: 20px; }
+
+  .addOns {
+    margin: 5px 0 0 0; }
+    .addOns .title {
+      font-size: 12px; }
+    .addOns .addOn {
+      font-size: 12px;
+      margin: 8px 0; }
+      .addOns .addOn .addOn_ages .price {
+        font-size: 12px; }
+
+  .total {
+    font-size: 12px; } }
 @media screen and (min-width: 480px) {
-  .buyBox .cityLogo img {
-    height: 50px; } }
+  .cityLogo img {
+    height: 50px; }
+
+  .age {
+    font-size: 14px; }
+
+  .save {
+    font-size: 12px; }
+
+  .price, .totalPrice {
+    font-size: 18px; }
+
+  .addOns {
+    margin: 5px 0 0 0; }
+    .addOns .title {
+      font-size: 12px; }
+    .addOns .addOn .addOn_ages .price {
+      font-size: 12px; }
+
+  .total {
+    font-size: 12px; } }
+@media screen and (min-width: 768px) {
+  .cityLogo img {
+    height: 60px; }
+
+  .age {
+    font-size: 18px; }
+
+  .save {
+    font-size: 14px; }
+
+  .price, .totalPrice {
+    font-size: 28px; }
+
+  .addOns {
+    margin: 15px 0 0 0; }
+    .addOns .title {
+      font-size: 12px; }
+    .addOns .addOn .addOn_ages .price {
+      font-weight: bold;
+      font-size: 14px; }
+
+  .total {
+    font-size: 12px; } }

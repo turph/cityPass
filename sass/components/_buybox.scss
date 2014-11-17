@@ -1,18 +1,45 @@
 .buyBox{
 	border:1px solid $red;
 	@include rounded;
-	.cityLogo{
-		text-align:center;margin:10px 0 0 0;
-		img{height:60px;}
+	.buyBoxPadding{
+		padding:10px 20px 15px 20px;
+		.cityLogo{text-align:center;}
+		.reviews{
+			text-align:center;margin:6px 0 0 0;font-size:12px;font-weight:bold;
+			img{vertical-align:middle;}
+			.reviewCount{font-weight:normal;font-size:10px;}
+		}
+		.ageGroup{
+			margin:0;padding:8px 0;
+			border-bottom:1px solid $gray-light;display:table;width:100%;
+			.age, .price, .quantity{display:table-cell;vertical-align:bottom;}
+			.price, .quantity{text-align:right;}
+			.age{font-weight:bold;}
+			.save{margin:0 0 0 5px;display:block;font-weight:normal;}
+			.price{margin:0 0 0 15px;font-weight:bold;}
+			.quantity{}
+		}
+		.addOns{
+			.title{color:$gray-dark;text-transform:uppercase;}
+			.addOn{
+				font-weight:bold;font-size:14px;margin:10px 0;
+				input{float:left;margin:5px 0 0 0;}
+				.addOnLabel{margin:0 0 0 20px;color:$black2;}
+				.addOn_ages{
+					display:block;font-size:12px;font-weight:normal;
+					.price{font-weight:bold;}
+				}
+			}
+		}
+		.total{
+			padding:5px 0 0 0;border-top:1px solid $gray-medium;text-align:right;text-transform:capitalize;color:$gray-medium;
+			.totalPrice{margin:0 0 0 5px;font-weight:bold;}
+		}
+		.nav{margin:20px 0 0 0;}
 	}
-	.reviews{
-		text-align:center;margin:6px 0 0 0;font-size:12px;font-weight:bold;
-		img{vertical-align:middle;}
-		.reviewCount{font-weight:normal;font-size:10px;}
-	}
-	.ageGroup{
-		margin:0 20px;
-		border-bottom:1px solid $gray-medium;
+	.buyBoxFooter{
+		padding:5px 10px;border-top:1px solid $gray-medium;background-color:$gray-light;
+		.currency{font-size:12px;text-align:center;color:$gray-medium;font-weight:normal;text-transform:capitalize;}
 	}
 }
 
@@ -21,22 +48,61 @@
 
 @include screen(320px, 479px)
 {
-	.buyBox{
-		.cityLogo{
-			img{height:40px;}
+	.cityLogo{
+		img{height:40px;}
+	}
+	.age{font-size:14px;}
+	.save{font-size:12px;}
+	.price, .totalPrice{font-size:20px;}
+	.addOns{
+		margin:5px 0 0 0;
+		.title{font-size:12px;}
+		.addOn{
+			font-size:12px;margin:8px 0;
+			.addOn_ages{
+				.price{font-size:12px;}
+			}
 		}
 	}
+	.total{font-size:12px;}
 }
 @include min-screen(480px)
 {
-	.buyBox{
-		.cityLogo{
-			img{height:50px;}
+	.cityLogo{
+		img{height:50px;}
+	}
+	.age{font-size:14px;}
+	.save{font-size:12px;}
+	.price, .totalPrice{font-size:18px;}
+	.addOns{
+		margin:5px 0 0 0;
+		.title{font-size:12px;}
+		.addOn{
+			.addOn_ages{
+				.price{font-size:12px;}
+			}
 		}
 	}
+	.total{font-size:12px;}
 }
 @include min-screen(768px)
 {
+	.cityLogo{
+		img{height:60px;}
+	}
+	.age{font-size:18px;}
+	.save{font-size:14px;}
+	.price, .totalPrice{font-size:28px;}
+	.addOns{
+		margin:15px 0 0 0;
+		.title{font-size:12px;}
+		.addOn{
+			.addOn_ages{
+				.price{font-weight:bold;font-size:14px;}
+			}
+		}
+	}
+	.total{font-size:12px;}
 }
 @include min-screen(1024px)
 {
