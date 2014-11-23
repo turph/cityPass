@@ -971,6 +971,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/attractionLogos\/seaWorld.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4690,
+		"inputAbbreviatedPath": "\/img\/attractionLogos\/seaWorld.png",
+		"outputAbbreviatedPath": "\/img\/attractionLogos\/seaWorld.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/cityPass-socal.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -989,6 +1000,17 @@
 		"initialSize": 2217,
 		"inputAbbreviatedPath": "\/img\/reviewStars4-5.png",
 		"outputAbbreviatedPath": "\/img\/reviewStars4-5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/soCall_full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40176,
+		"inputAbbreviatedPath": "\/img\/soCall_full.jpg",
+		"outputAbbreviatedPath": "\/img\/soCall_full.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -129,14 +129,15 @@ blockquote {
 @media screen and (min-width: 480px) {
   .buyBox .cityLogo img {
     height: 50px; } }
-.product {
-  margin: 20px; }
-  .product .atf {
-    width: 100%; }
-    .product .atf .carousel {
-      float: left; }
-    .product .atf .buyBox {
-      float: left; }
+.product .atf {
+  width: 100%; }
+  .product .atf .carousel {
+    float: left; }
+    .product .atf .carousel .heroWrapper {
+      width: 100%;
+      position: relative; }
+  .product .atf .buyBox {
+    float: left; }
 
 .price {
   color: #ff9900; }
@@ -154,25 +155,34 @@ blockquote {
 @media screen and (min-width: 480px) {
   .product .atf .carousel {
     width: 49%; }
+    .product .atf .carousel .heroWrapper {
+      padding-bottom: 69.716%; }
   .product .atf .buyBox {
-    width: 49%; } }
+    width: 50%; } }
 @media screen and (min-width: 768px) {
   .product .atf .carousel {
     width: 59%; }
+    .product .atf .carousel .heroWrapper {
+      padding-bottom: 63.536%; }
   .product .atf .buyBox {
-    width: 39%; } }
+    width: 40%; } }
 @media screen and (min-width: 1024px) {
   .product .atf .carousel {
     width: 69%; }
+    .product .atf .carousel .heroWrapper {
+      padding-bottom: 57.356%; }
   .product .atf .buyBox {
-    width: 29%; } }
+    width: 30%; } }
+.buyBoxWrap {
+  margin: 0 10px; }
+
 .buyBox {
   border: 1px solid #CF534D;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px; }
   .buyBox .buyBoxPadding {
-    padding: 10px 20px 15px 20px; }
+    padding: 10px 10px 15px 10px; }
     .buyBox .buyBoxPadding .cityLogo {
       text-align: center; }
     .buyBox .buyBoxPadding .reviews {
@@ -341,13 +351,13 @@ blockquote {
     height: 60px; }
 
   .age {
-    font-size: 18px; }
+    font-size: 16px; }
 
   .save {
     font-size: 14px; }
 
   .price, .totalPrice {
-    font-size: 28px; }
+    font-size: 24px; }
 
   .addOns {
     margin: 15px 0 0 0; }
@@ -359,3 +369,97 @@ blockquote {
 
   .total {
     font-size: 12px; } }
+.carousel .carouselPadding {
+  margin: 0 10px 0 0; }
+  .carousel .carouselPadding .heroWrapper {
+    background-size: cover; }
+.carousel .attractionListWrap {
+  margin: 5px 10px 10px 10px; }
+.carousel .attractionList .attractionTile {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #ededed;
+  background-color: #fafafa;
+  float: left; }
+  .carousel .attractionList .attractionTile:hover {
+    border: 1px solid #3c8bd3;
+    background-color: whitesmoke; }
+  .carousel .attractionList .attractionTile img {
+    opacity: 0.8;
+    vertical-align: middle;
+    float: left; }
+  .carousel .attractionList .attractionTile .attractionName {
+    margin-left: 65px;
+    padding: 6px 0 0 0; }
+  .carousel .attractionList .attractionTile .attractionNameSub {
+    display: block;
+    color: #666666; }
+  .carousel .attractionList .attractionTile a {
+    color: #666666; }
+    .carousel .attractionList .attractionTile a:hover {
+      color: #3c8bd3;
+      text-decoration: none; }
+.carousel .attractionList .cpTile {
+  border-top: 1px solid #CF534D; }
+  .carousel .attractionList .cpTile a {
+    color: #CF534D; }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .carousel {
+    margin: 0 0 10px 0; }
+    .carousel .carouselPadding {
+      margin: 0 0 15px 0;
+      height: 200px; }
+      .carousel .carouselPadding .heroWrapper {
+        height: 200px; }
+    .carousel .attractionList {
+      font-size: 12px;
+      font-weight: bold; }
+      .carousel .attractionList .attractionTile {
+        width: 45%;
+        height: 35px;
+        margin: 2px 6px; }
+        .carousel .attractionList .attractionTile img {
+          display: none; }
+        .carousel .attractionList .attractionTile .attractionName {
+          margin-left: 0;
+          padding: 4px 0 0 0;
+          text-align: center; }
+        .carousel .attractionList .attractionTile .attractionNameSub {
+          display: none; }
+      .carousel .attractionList .carouselActive {
+        border-bottom: 1px solid #CF534D; }
+      .carousel .attractionList .cpTile {
+        width: 100%;
+        font-size: 14px;
+        margin: 2px 0; }
+        .carousel .attractionList .cpTile .attractionNameSub {
+          font-size: 12px;
+          font-weight: normal;
+          color: #878787;
+          display: block; } }
+@media screen and (min-width: 480px) {
+  .carousel .attractionList {
+    font-size: 12px;
+    font-weight: bold; }
+    .carousel .attractionList .attractionTile {
+      width: 100%;
+      height: 45px;
+      margin: 2px 0; }
+      .carousel .attractionList .attractionTile img {
+        padding: 10px 0 0 2px;
+        width: 60px; }
+      .carousel .attractionList .attractionTile .attractionName {
+        margin-left: 65px;
+        padding: 8px 0 0 0; }
+      .carousel .attractionList .attractionTile .attractionNameSub {
+        font-size: 12px;
+        font-weight: normal;
+        color: #878787; }
+    .carousel .attractionList .carouselActive {
+      border-left: 1px solid #CF534D; }
+    .carousel .attractionList .cpTile {
+      width: 100%;
+      font-size: 14px;
+      margin: 2px 0; } }

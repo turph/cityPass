@@ -1,8 +1,10 @@
 .product{
-	margin:20px;
 	.atf{
 		width:100%;
-		.carousel{float:left;}
+		.carousel{
+			float:left;
+			.heroWrapper{width:100%;position:relative;}
+		}
 		.buyBox{float:left;}		
 	}
 }
@@ -23,8 +25,11 @@
 {
 	.product{
 		.atf{
-			.carousel{width:49%;}
-			.buyBox{width:49%;}
+			.carousel{
+				width:49%;
+				.heroWrapper{padding-bottom:69.716%;}
+			}
+			.buyBox{width:50%;}
 		}
 	}
 }
@@ -32,8 +37,11 @@
 {
 	.product{
 		.atf{
-			.carousel{width:59%;}
-			.buyBox{width:39%;}
+			.carousel{
+				width:59%;
+				.heroWrapper{padding-bottom:63.536%;}
+			}
+			.buyBox{width:40%;}
 		}
 	}
 }
@@ -41,8 +49,11 @@
 {
 	.product{
 		.atf{
-			.carousel{width:69%;}
-			.buyBox{width:29%;}
+			.carousel{
+				width:69%;
+				.heroWrapper{padding-bottom:57.356%;}
+			}
+			.buyBox{width:30%;}
 		}
 	}
 }

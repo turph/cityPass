@@ -1,8 +1,10 @@
+.buyBoxWrap{
+	margin:0 10px;
+}
 .buyBox{
-	border:1px solid $red;
-	@include rounded;
+	border:1px solid $red;@include rounded;
 	.buyBoxPadding{
-		padding:10px 20px 15px 20px;
+		padding:10px 10px 15px 10px;
 		.cityLogo{text-align:center;}
 		.reviews{
 			text-align:center;margin:6px 0 0 0;font-size:12px;font-weight:bold;
@@ -94,9 +96,9 @@
 	.cityLogo{
 		img{height:60px;}
 	}
-	.age{font-size:18px;}
+	.age{font-size:16px;}
 	.save{font-size:14px;}
-	.price, .totalPrice{font-size:28px;}
+	.price, .totalPrice{font-size:24px;}
 	.addOns{
 		margin:15px 0 0 0;
 		.title{font-size:12px;}

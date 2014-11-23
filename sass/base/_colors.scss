@@ -3,8 +3,15 @@ $white:		#fff;
 $red:			#CF534D;
 $orange:	#ff9900;
 $blue:		#3c8bd3;
-$black2:			lighten($black, 25%);
-$gray-dark:		lighten($black, 40%);
-$gray-medium:	lighten($black, 53%);
-$gray-light:	lighten($black, 93%);
-$blue-light:	lighten($blue, 50%);
+$green:		#4ea44f;
+
+$black2:				lighten($black, 25%);
+$gray-dark:			lighten($black, 40%);
+$gray-medium:		lighten($black, 53%);
+$gray-light:		lighten($black, 93%);
+$gray-lighter:	lighten($black, 96%);
+$gray-lightest:	lighten($black, 98%);
+
+$blue-light:		lighten($blue, 50%);
+
+$orange-light:	lighten($orange, 45%);
