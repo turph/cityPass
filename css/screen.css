@@ -170,7 +170,7 @@ blockquote {
   .product .atf .carousel {
     width: 69%; }
     .product .atf .carousel .heroWrapper {
-      padding-bottom: 57.356%; }
+      padding-bottom: 52.356%; }
   .product .atf .buyBox {
     width: 30%; } }
 .buyBoxWrap {
@@ -444,9 +444,9 @@ blockquote {
     font-size: 12px;
     font-weight: bold; }
     .carousel .attractionList .attractionTile {
-      width: 100%;
+      width: 95%;
       height: 45px;
-      margin: 2px 0; }
+      margin: 2px 6px; }
       .carousel .attractionList .attractionTile img {
         padding: 10px 0 0 2px;
         width: 60px; }
@@ -463,3 +463,32 @@ blockquote {
       width: 100%;
       font-size: 14px;
       margin: 2px 0; } }
+@media screen and (min-width: 768px) {
+  .carousel .attractionList {
+    font-size: 14px;
+    font-weight: bold; }
+    .carousel .attractionList .attractionTile {
+      width: 22%;
+      height: 120px;
+      margin: 2px 6px;
+      text-align: center; }
+      .carousel .attractionList .attractionTile img {
+        padding: 10px 0 0 2px;
+        width: 70%;
+        float: none; }
+      .carousel .attractionList .attractionTile .attractionName {
+        margin: 0;
+        padding: 8px 0 0 0; }
+      .carousel .attractionList .attractionTile .attractionNameSub {
+        display: none; }
+    .carousel .attractionList .carouselActive {
+      border-left: 1px solid #CF534D; }
+    .carousel .attractionList .cpTile {
+      width: 100%;
+      font-size: 16px;
+      margin: 2px 0;
+      height: 50px; }
+      .carousel .attractionList .cpTile img {
+        width: 100px;
+        float: left;
+        padding: 6px 0 0 2px; } }

@@ -12,8 +12,7 @@
 .save{color:$red;}
 
 
-@include screen(320px, 479px)
-{
+@include screen(320px, 479px){
 	.product{
 		.atf{
 			.carousel{@include clear;width:100%;}
@@ -21,8 +20,7 @@
 		}
 	}
 }
-@include min-screen(480px)
-{
+@include min-screen(480px){
 	.product{
 		.atf{
 			.carousel{
@@ -33,8 +31,7 @@
 		}
 	}
 }
-@include min-screen(768px)
-{
+@include min-screen(768px){
 	.product{
 		.atf{
 			.carousel{
@@ -45,13 +42,12 @@
 		}
 	}
 }
-@include min-screen(1024px)
-{
+@include min-screen(1024px){
 	.product{
 		.atf{
 			.carousel{
 				width:69%;
-				.heroWrapper{padding-bottom:57.356%;}
+				.heroWrapper{padding-bottom:52.356%;}
 			}
 			.buyBox{width:30%;}
 		}
