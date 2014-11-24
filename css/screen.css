@@ -168,11 +168,11 @@ blockquote {
     width: 40%; } }
 @media screen and (min-width: 1024px) {
   .product .atf .carousel {
-    width: 69%; }
+    width: 74%; }
     .product .atf .carousel .heroWrapper {
       padding-bottom: 52.356%; }
   .product .atf .buyBox {
-    width: 30%; } }
+    width: 25%; } }
 .buyBoxWrap {
   margin: 0 10px; }
 
@@ -208,8 +208,8 @@ blockquote {
       .buyBox .buyBoxPadding .tabs .tabrow li {
         margin: 0 0 0 5px;
         padding: 0 10px;
-        border: 1px solid #878787;
-        background: #ededed;
+        border: 1px solid #CF534D;
+        background: #fafafa;
         display: inline-block;
         position: relative;
         z-index: 0;
@@ -228,16 +228,21 @@ blockquote {
         width: 100%;
         bottom: 0;
         left: 0;
-        border-bottom: 1px solid #878787;
+        border-bottom: 1px solid #CF534D;
         z-index: 1; }
       .buyBox .buyBoxPadding .tabs .tabrow li.selected {
         z-index: 2;
-        border-bottom-color: #fff;
-        background-color: #fff; }
+        border-bottom-color: #fef7e9;
+        background-color: #fef7e9; }
         .buyBox .buyBoxPadding .tabs .tabrow li.selected a {
           color: #404040; }
           .buyBox .buyBoxPadding .tabs .tabrow li.selected a:hover {
             text-decoration: none; }
+    .buyBox .buyBoxPadding .tabMessage {
+      background-color: #fef7e9;
+      padding: 6px;
+      color: #CF534D;
+      font-size: 12px; }
     .buyBox .buyBoxPadding .ageGroup {
       margin: 0;
       padding: 8px 0;
@@ -414,8 +419,8 @@ blockquote {
       .carousel .carouselPadding .heroWrapper {
         height: 200px; }
     .carousel .attractionList {
-      font-size: 12px;
-      font-weight: bold; }
+      font-size: 14px;
+      font-weight: normal; }
       .carousel .attractionList .attractionTile {
         width: 45%;
         height: 35px;
@@ -495,3 +500,45 @@ blockquote {
       .carousel .attractionList .cpTile .attractionNameSub {
         display: block;
         font-size: 14px; } }
+@media screen and (min-width: 1024px) {
+  .carousel .attractionListWrap {
+    margin: 5px 10px 10px 10px;
+    float: left;
+    position: absolute;
+    top: 30%; }
+  .carousel .attractionList {
+    font-size: 14px;
+    font-weight: bold;
+    width: 25%; }
+    .carousel .attractionList .attractionTile {
+      width: 95%;
+      height: 50px;
+      margin: 2px 6px;
+      padding: 0 6px 0 0;
+      text-align: left; }
+      .carousel .attractionList .attractionTile img {
+        padding: 10px 0 0 2px;
+        width: 70px;
+        float: left; }
+      .carousel .attractionList .attractionTile .attractionName {
+        margin-left: 80px;
+        padding: 8px 0 0 0; }
+      .carousel .attractionList .attractionTile .attractionNameSub {
+        font-size: 12px;
+        font-weight: normal;
+        color: #878787;
+        display: block; }
+    .carousel .attractionList .carouselActive {
+      border-left: 1px solid #CF534D; }
+    .carousel .attractionList .cpTile {
+      width: 100%;
+      font-size: 18px;
+      margin: 2px 0;
+      height: 50px; }
+      .carousel .attractionList .cpTile img {
+        width: 70px;
+        float: left;
+        padding: 6px 0 0 2px; }
+      .carousel .attractionList .cpTile .attractionNameSub {
+        display: block;
+        font-size: 12px; } }

@@ -15,6 +15,7 @@
 			margin:8px 0 0 0;width:100%;font-size:12px;
 			@include tabList;
 		}
+		.tabMessage{background-color:#fef7e9;padding:6px;color:#CF534D;font-size:12px;}
 		.ageGroup{
 			margin:0;padding:8px 0;
 			border-bottom:1px solid $gray-light;display:table;width:100%;
