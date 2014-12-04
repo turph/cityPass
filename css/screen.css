@@ -453,13 +453,20 @@ blockquote {
       bottom: 0;
       width: 100%;
       color: #404040;
-      text-shadow: 1px 1px 1px rgba(225, 225, 225, 0.4); }
+      text-shadow: 1px 1px 1px rgba(225, 225, 225, 0.35); }
       .carousel .carouselPadding .heroWrapper .carouselMessage .carouselTitle {
         padding: 10px;
         font-weight: normal; }
       .carousel .carouselPadding .heroWrapper .carouselMessage .location {
         display: block;
         font-weight: bold; }
+  .carousel .carouselPadding .attractionSummary {
+    margin: 5px; }
+    .carousel .carouselPadding .attractionSummary img {
+      height: 40px;
+      float: left; }
+    .carousel .carouselPadding .attractionSummary .pitch {
+      margin-left: 110px; }
 .carousel .attractionListWrap {
   margin: 5px 10px 10px 10px; }
 .carousel .attractionList .attractionTile {
@@ -551,10 +558,16 @@ blockquote {
       font-size: 14px;
       margin: 2px 0; } }
 @media screen and (min-width: 768px) {
-  .carousel .heroWrapper .carouselMessage {
+  .carousel .carouselPadding .heroWrapper .carouselMessage {
     font-size: 18px; }
-    .carousel .heroWrapper .carouselMessage .location {
+    .carousel .carouselPadding .heroWrapper .carouselMessage .location {
       font-size: 20px; }
+  .carousel .carouselPadding .attractionSummary {
+    margin: 7px; }
+    .carousel .carouselPadding .attractionSummary img {
+      height: 50px; }
+    .carousel .carouselPadding .attractionSummary .pitch {
+      margin-left: 143px; }
   .carousel .attractionList {
     font-size: 14px;
     font-weight: bold; }
@@ -587,15 +600,19 @@ blockquote {
         display: block;
         font-size: 14px; } }
 @media screen and (min-width: 1024px) {
-  .carousel .heroWrapper .carouselMessage {
+  .carousel .carouselPadding .heroWrapper .carouselMessage {
     font-size: 20px; }
-    .carousel .heroWrapper .carouselMessage .location {
+    .carousel .carouselPadding .heroWrapper .carouselMessage .location {
       font-size: 24px; }
+  .carousel .carouselPadding .attractionSummary {
+    margin: 10px; }
+    .carousel .carouselPadding .attractionSummary img {
+      height: 60px; }
+    .carousel .carouselPadding .attractionSummary .pitch {
+      margin-left: 170px; }
   .carousel .attractionListWrap {
     margin: 5px 10px 10px 10px;
-    float: left;
-    position: absolute;
-    top: 30%; }
+    float: left; }
   .carousel .attractionList {
     font-size: 14px;
     font-weight: bold;

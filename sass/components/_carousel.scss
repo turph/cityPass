@@ -4,10 +4,15 @@
 		.heroWrapper{
 			background-size:cover;
 			.carouselMessage{
-				background:rgba(225,225,225,0.6);position:absolute;bottom:0;width:100%;color:$black2;text-shadow:1px 1px 1px rgba(225,225,225,0.4);
+				background:rgba(225,225,225,0.6);position:absolute;bottom:0;width:100%;color:$black2;text-shadow:1px 1px 1px rgba(225,225,225,0.35);
 				.carouselTitle{padding:10px;font-weight:normal;}
 				.location{display:block;font-weight:bold;}
 			}
+		}
+		.attractionSummary{
+			margin:5px;
+			img{height:40px;float:left;}
+			.pitch{margin-left:110px;}
 		}
 	}
 	.attractionListWrap{margin:5px 10px 10px 10px;}
@@ -78,10 +83,17 @@
 }
 @include min-screen(768px){
 	.carousel{
-		.heroWrapper{
-			.carouselMessage{
-				font-size:18px;
-				.location{font-size:20px;}
+		.carouselPadding{
+			.heroWrapper{
+				.carouselMessage{
+					font-size:18px;
+					.location{font-size:20px;}
+				}
+			}
+			.attractionSummary{
+				margin:7px;
+				img{height:50px;}
+				.pitch{margin-left:143px;}
 			}
 		}
 		.attractionList{
@@ -105,13 +117,20 @@
 }
 @include min-screen(1024px){
 	.carousel{
-		.heroWrapper{
-			.carouselMessage{
-				font-size:20px;
-				.location{font-size:24px;}
+		.carouselPadding{
+			.heroWrapper{
+				.carouselMessage{
+					font-size:20px;
+					.location{font-size:24px;}
+				}
+			}
+			.attractionSummary{
+				margin:10px;
+				img{height:60px;}
+				.pitch{margin-left:170px;}
 			}
 		}
-		.attractionListWrap{margin:5px 10px 10px 10px;float:left;position:absolute;top:30%;}
+		.attractionListWrap{margin:5px 10px 10px 10px;float:left;}
 		.attractionList{
 			font-size:14px;font-weight:bold;width:25%;
 			.attractionTile{
