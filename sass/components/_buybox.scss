@@ -1,8 +1,8 @@
 .buyBoxWrap{
-	margin:0 10px;
+	margin:0 10px;padding:10px 0 0 0;
 }
 .buyBox{
-	border:1px solid $red;@include rounded;
+	border:1px solid $black2;@include rounded(3px);
 	.buyBoxPadding{
 		padding:10px 10px 15px 10px;
 		.cityLogo{text-align:center;}
@@ -15,16 +15,17 @@
 			margin:8px 0 0 0;width:100%;font-size:12px;
 			@include tabList;
 		}
-		.tabMessage{background-color:#fef7e9;padding:6px;color:#CF534D;font-size:12px;}
+		.tabMessage{padding:6px;}
 		.ageGroup{
 			margin:0;padding:8px 0;
 			border-bottom:1px solid $gray-light;display:table;width:100%;
+			.ageGroupLineItem{display:table-row;}
 			.age, .price, .quantity{display:table-cell;vertical-align:bottom;}
 			.price, .quantity{text-align:right;}
-			.age{font-weight:bold;}
+			.age{font-weight:bold;color:$black2;}
 			.save{margin:0 0 0 5px;display:block;font-weight:normal;}
 			.price{margin:0 0 0 15px;font-weight:bold;}
-			.quantity{}
+			.quantity{width:20%;padding-left:10px;}
 		}
 		.addOns{
 			.title{color:$gray-dark;text-transform:uppercase;}
@@ -38,9 +39,15 @@
 				}
 			}
 		}
-		.total{
-			padding:5px 0 0 0;border-top:1px solid $gray-medium;text-align:right;text-transform:capitalize;color:$gray-medium;
-			.totalPrice{margin:0 0 0 5px;font-weight:bold;}
+		.pricing{
+			padding:5px 0 0 0;border-top:1px solid $gray-medium;width:100%;display:table;
+			.priceLineItem{
+				display:table-row;
+				.priceLabel, .value{display:table-cell;text-align:right;text-transform:capitalize;}
+				.priceLabel{padding:0 6px 0 0;color:$gray-medium;}
+				.value{width:10%;}
+			}
+			.totalPrice{font-weight:bold;}
 		}
 		.nav{margin:20px 0 0 0;}
 	}
@@ -71,7 +78,7 @@
 			}
 		}
 	}
-	.total{font-size:12px;}
+	.priceLabel, .discount{font-size:12px;}
 }
 @include min-screen(480px)
 {
@@ -90,7 +97,7 @@
 			}
 		}
 	}
-	.total{font-size:12px;}
+	.priceLabel, .discount{font-size:12px;}
 }
 @include min-screen(768px)
 {
@@ -99,7 +106,7 @@
 	}
 	.age{font-size:16px;}
 	.save{font-size:14px;}
-	.price, .totalPrice{font-size:24px;}
+	.price, .totalPrice{font-size:20px;}
 	.addOns{
 		margin:15px 0 0 0;
 		.title{font-size:12px;}
@@ -109,7 +116,7 @@
 			}
 		}
 	}
-	.total{font-size:12px;}
+	.priceLabel, .discount{font-size:12px;}
 }
 @include min-screen(1024px)
 {

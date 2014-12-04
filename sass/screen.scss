@@ -2,10 +2,12 @@
 @import "mixins/mixins";
 @import "base/media-queries";
 @import "base/colors";
+@import "base/alerts";
 @import "base/form";
 @import "base/typography";
 
 @import "layout/product";
 
+@import "components/header";
 @import "components/buyBox";
 @import "components/carousel";

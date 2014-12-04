@@ -1,12 +1,19 @@
 .carousel{
 	.carouselPadding{
 		margin:0 10px 0 0;
-		.heroWrapper{background-size:cover;}
+		.heroWrapper{
+			background-size:cover;
+			.carouselMessage{
+				background:rgba(225,225,225,0.6);position:absolute;bottom:0;width:100%;color:$black2;text-shadow:1px 1px 1px rgba(225,225,225,0.4);
+				.carouselTitle{padding:10px;font-weight:normal;}
+				.location{display:block;font-weight:bold;}
+			}
+		}
 	}
 	.attractionListWrap{margin:5px 10px 10px 10px;}
 	.attractionList{
 		.attractionTile{
-			@include rounded;
+			@include rounded(2px);
 			border:1px solid $gray-light;background-color:$gray-lightest;float:left;
 			&:hover{border:1px solid $blue;background-color:$gray-lighter;}
 			img{opacity:0.8;vertical-align:middle;float:left;}
@@ -71,6 +78,12 @@
 }
 @include min-screen(768px){
 	.carousel{
+		.heroWrapper{
+			.carouselMessage{
+				font-size:18px;
+				.location{font-size:20px;}
+			}
+		}
 		.attractionList{
 			font-size:14px;font-weight:bold;
 			.attractionTile{
@@ -92,6 +105,12 @@
 }
 @include min-screen(1024px){
 	.carousel{
+		.heroWrapper{
+			.carouselMessage{
+				font-size:20px;
+				.location{font-size:24px;}
+			}
+		}
 		.attractionListWrap{margin:5px 10px 10px 10px;float:left;position:absolute;top:30%;}
 		.attractionList{
 			font-size:14px;font-weight:bold;width:25%;

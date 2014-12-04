@@ -1,0 +1,21 @@
+.alert{
+	padding:10px;font-size:12px;
+	.alert-icon{width:20px;height:20px;margin:0 6px 0 0;overflow:hidden;background-image:url("../img/sprite-alerts.png");float:left;vertical-align:middle;}
+}
+.success, .warning, .caution, .notification{@include rounded(3px);}
+.success{
+	border:1px solid $green;background-color:$green-light;color:$green;
+	.alert-icon{background-position:-20px 0;}
+}
+.warning{
+	border:1px solid $red;background-color:$red-light;color:$red;
+	.alert-icon{background-position:-40px 0;}
+}
+.caution{
+	border:1px solid $orange;background-color:$orange-light;color:$orange;
+	.alert-icon{background-position:-60px 0;}
+}
+.notification{
+	border:1px solid $blue;background-color:$blue-light;color:$blue;
+	.alert-icon{background-position:0 0;}
+}

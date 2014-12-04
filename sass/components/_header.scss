@@ -1,0 +1,4 @@
+.header{
+	height:46px;background-color:$black;background-image:url('../img/attractionLogos/header-background.png');
+	@include box-shadow(0, 2px, 4px, rgba(0, 0, 0, 0.5));
+}

@@ -10,9 +10,11 @@
 }
 .price{color:$orange;}
 .save{color:$red;}
+.discount{color:$black2;}
 
 
-@include screen(320px, 479px){
+@include screen(320px, 479px)
+{
 	.product{
 		.atf{
 			.carousel{@include clear;width:100%;}
@@ -20,7 +22,8 @@
 		}
 	}
 }
-@include min-screen(480px){
+@include min-screen(480px)
+{
 	.product{
 		.atf{
 			.carousel{
@@ -31,18 +34,20 @@
 		}
 	}
 }
-@include min-screen(768px){
+@include min-screen(768px)
+{
 	.product{
 		.atf{
 			.carousel{
-				width:59%;
+				width:74%;
 				.heroWrapper{padding-bottom:63.536%;}
 			}
-			.buyBox{width:40%;}
+			.buyBox{width:25%;}
 		}
 	}
 }
-@include min-screen(1024px){
+@include min-screen(1024px)
+{
 	.product{
 		.atf{
 			.carousel{

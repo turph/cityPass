@@ -45,12 +45,57 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+.alert {
+  padding: 10px;
+  font-size: 12px; }
+  .alert .alert-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 6px 0 0;
+    overflow: hidden;
+    background-image: url("../img/sprite-alerts.png");
+    float: left;
+    vertical-align: middle; }
+
+.success, .warning, .caution, .notification {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
+
+.success {
+  border: 1px solid #4ea44f;
+  background-color: #f6fbf6;
+  color: #4ea44f; }
+  .success .alert-icon {
+    background-position: -20px 0; }
+
+.warning {
+  border: 1px solid #CF534D;
+  background-color: white;
+  color: #CF534D; }
+  .warning .alert-icon {
+    background-position: -40px 0; }
+
+.caution {
+  border: 1px solid #ff9900;
+  background-color: #fff5e5;
+  color: #ff9900; }
+  .caution .alert-icon {
+    background-position: -60px 0; }
+
+.notification {
+  border: 1px solid #3c8bd3;
+  background-color: #f7fafd;
+  color: #3c8bd3; }
+  .notification .alert-icon {
+    background-position: 0 0; }
+
 /* input[type=checkbox]{outline:1px solid $blue;margin:0;border:none;box-shadow:none;} */
 .btn {
   background-color: #3c8bd3;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
   text-align: center;
   color: #fff;
   text-transform: uppercase; }
@@ -145,6 +190,9 @@ blockquote {
 .save {
   color: #CF534D; }
 
+.discount {
+  color: #404040; }
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .product .atf .carousel {
     clear: both;
@@ -161,11 +209,11 @@ blockquote {
     width: 50%; } }
 @media screen and (min-width: 768px) {
   .product .atf .carousel {
-    width: 59%; }
+    width: 74%; }
     .product .atf .carousel .heroWrapper {
       padding-bottom: 63.536%; }
   .product .atf .buyBox {
-    width: 40%; } }
+    width: 25%; } }
 @media screen and (min-width: 1024px) {
   .product .atf .carousel {
     width: 74%; }
@@ -173,14 +221,23 @@ blockquote {
       padding-bottom: 52.356%; }
   .product .atf .buyBox {
     width: 25%; } }
+.header {
+  height: 46px;
+  background-color: #000;
+  background-image: url("../img/attractionLogos/header-background.png");
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) ;
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) ; }
+
 .buyBoxWrap {
-  margin: 0 10px; }
+  margin: 0 10px;
+  padding: 10px 0 0 0; }
 
 .buyBox {
-  border: 1px solid #CF534D;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px; }
+  border: 1px solid #404040;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
   .buyBox .buyBoxPadding {
     padding: 10px 10px 15px 10px; }
     .buyBox .buyBoxPadding .cityLogo {
@@ -206,10 +263,10 @@ blockquote {
         line-height: 24px;
         position: relative; }
       .buyBox .buyBoxPadding .tabs .tabrow li {
-        margin: 0 0 0 5px;
-        padding: 0 10px;
-        border: 1px solid #CF534D;
-        background: #fafafa;
+        margin: 0 0 0 2px;
+        padding: 0 7px;
+        border: 1px solid #878787;
+        background: #ededed;
         display: inline-block;
         position: relative;
         z-index: 0;
@@ -228,34 +285,34 @@ blockquote {
         width: 100%;
         bottom: 0;
         left: 0;
-        border-bottom: 1px solid #CF534D;
+        border-bottom: 1px solid #878787;
         z-index: 1; }
       .buyBox .buyBoxPadding .tabs .tabrow li.selected {
         z-index: 2;
         border-bottom-color: #fef7e9;
-        background-color: #fef7e9; }
+        background-color: #fff; }
         .buyBox .buyBoxPadding .tabs .tabrow li.selected a {
           color: #404040; }
           .buyBox .buyBoxPadding .tabs .tabrow li.selected a:hover {
             text-decoration: none; }
     .buyBox .buyBoxPadding .tabMessage {
-      background-color: #fef7e9;
-      padding: 6px;
-      color: #CF534D;
-      font-size: 12px; }
+      padding: 6px; }
     .buyBox .buyBoxPadding .ageGroup {
       margin: 0;
       padding: 8px 0;
       border-bottom: 1px solid #ededed;
       display: table;
       width: 100%; }
+      .buyBox .buyBoxPadding .ageGroup .ageGroupLineItem {
+        display: table-row; }
       .buyBox .buyBoxPadding .ageGroup .age, .buyBox .buyBoxPadding .ageGroup .price, .buyBox .buyBoxPadding .ageGroup .quantity {
         display: table-cell;
         vertical-align: bottom; }
       .buyBox .buyBoxPadding .ageGroup .price, .buyBox .buyBoxPadding .ageGroup .quantity {
         text-align: right; }
       .buyBox .buyBoxPadding .ageGroup .age {
-        font-weight: bold; }
+        font-weight: bold;
+        color: #404040; }
       .buyBox .buyBoxPadding .ageGroup .save {
         margin: 0 0 0 5px;
         display: block;
@@ -263,6 +320,9 @@ blockquote {
       .buyBox .buyBoxPadding .ageGroup .price {
         margin: 0 0 0 15px;
         font-weight: bold; }
+      .buyBox .buyBoxPadding .ageGroup .quantity {
+        width: 20%;
+        padding-left: 10px; }
     .buyBox .buyBoxPadding .addOns .title {
       color: #666666;
       text-transform: uppercase; }
@@ -282,14 +342,23 @@ blockquote {
         font-weight: normal; }
         .buyBox .buyBoxPadding .addOns .addOn .addOn_ages .price {
           font-weight: bold; }
-    .buyBox .buyBoxPadding .total {
+    .buyBox .buyBoxPadding .pricing {
       padding: 5px 0 0 0;
       border-top: 1px solid #878787;
-      text-align: right;
-      text-transform: capitalize;
-      color: #878787; }
-      .buyBox .buyBoxPadding .total .totalPrice {
-        margin: 0 0 0 5px;
+      width: 100%;
+      display: table; }
+      .buyBox .buyBoxPadding .pricing .priceLineItem {
+        display: table-row; }
+        .buyBox .buyBoxPadding .pricing .priceLineItem .priceLabel, .buyBox .buyBoxPadding .pricing .priceLineItem .value {
+          display: table-cell;
+          text-align: right;
+          text-transform: capitalize; }
+        .buyBox .buyBoxPadding .pricing .priceLineItem .priceLabel {
+          padding: 0 6px 0 0;
+          color: #878787; }
+        .buyBox .buyBoxPadding .pricing .priceLineItem .value {
+          width: 10%; }
+      .buyBox .buyBoxPadding .pricing .totalPrice {
         font-weight: bold; }
     .buyBox .buyBoxPadding .nav {
       margin: 20px 0 0 0; }
@@ -327,7 +396,7 @@ blockquote {
       .addOns .addOn .addOn_ages .price {
         font-size: 12px; }
 
-  .total {
+  .priceLabel, .discount {
     font-size: 12px; } }
 @media screen and (min-width: 480px) {
   .cityLogo img {
@@ -349,7 +418,7 @@ blockquote {
     .addOns .addOn .addOn_ages .price {
       font-size: 12px; }
 
-  .total {
+  .priceLabel, .discount {
     font-size: 12px; } }
 @media screen and (min-width: 768px) {
   .cityLogo img {
@@ -362,7 +431,7 @@ blockquote {
     font-size: 14px; }
 
   .price, .totalPrice {
-    font-size: 24px; }
+    font-size: 20px; }
 
   .addOns {
     margin: 15px 0 0 0; }
@@ -372,18 +441,31 @@ blockquote {
       font-weight: bold;
       font-size: 14px; }
 
-  .total {
+  .priceLabel, .discount {
     font-size: 12px; } }
 .carousel .carouselPadding {
   margin: 0 10px 0 0; }
   .carousel .carouselPadding .heroWrapper {
     background-size: cover; }
+    .carousel .carouselPadding .heroWrapper .carouselMessage {
+      background: rgba(225, 225, 225, 0.6);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      color: #404040;
+      text-shadow: 1px 1px 1px rgba(225, 225, 225, 0.4); }
+      .carousel .carouselPadding .heroWrapper .carouselMessage .carouselTitle {
+        padding: 10px;
+        font-weight: normal; }
+      .carousel .carouselPadding .heroWrapper .carouselMessage .location {
+        display: block;
+        font-weight: bold; }
 .carousel .attractionListWrap {
   margin: 5px 10px 10px 10px; }
 .carousel .attractionList .attractionTile {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
   border: 1px solid #ededed;
   background-color: #fafafa;
   float: left; }
@@ -469,6 +551,10 @@ blockquote {
       font-size: 14px;
       margin: 2px 0; } }
 @media screen and (min-width: 768px) {
+  .carousel .heroWrapper .carouselMessage {
+    font-size: 18px; }
+    .carousel .heroWrapper .carouselMessage .location {
+      font-size: 20px; }
   .carousel .attractionList {
     font-size: 14px;
     font-weight: bold; }
@@ -501,6 +587,10 @@ blockquote {
         display: block;
         font-size: 14px; } }
 @media screen and (min-width: 1024px) {
+  .carousel .heroWrapper .carouselMessage {
+    font-size: 20px; }
+    .carousel .heroWrapper .carouselMessage .location {
+      font-size: 24px; }
   .carousel .attractionListWrap {
     margin: 5px 10px 10px 10px;
     float: left;

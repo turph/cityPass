@@ -7,10 +7,16 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
 	<body class="product">
+		<div class="header">
+		</div>
 		<div class="atf">
 			<div class="carousel">
 				<div class="carouselPadding">
-					<div class="heroWrapper" style="background-image:url('img/soCall_full.jpg')"></div>
+					<div id="carousel1" class="heroWrapper" style="background-image:url('img/carouselImgs/SoCal/intro.jpg')">
+						<div class="carouselMessage">
+							<div class="carouselTitle"><span class="location">Southern California</span>One card, 4 attractions</div>
+						</div>
+					</div>
 					<div class="attractionListWrap">
 						<div class="attractionList">
 							<div class="attractionTile cpTile"><a href=""><img src="img/attractionLogos/cpSoCal.png"><div class="attractionName">Southern California<span class="attractionNameSub">CityPASS gives you admission to:</span></div></a></div>
@@ -25,37 +31,46 @@
 			<div class="buyBoxWrap">
 				<div class="buybox">
 					<div class="buyBoxPadding">
-						<div class="cityLogo"><img src="img/cityPass-socal.png" alt="CityPass Socal"></div>
+						<div class="cityLogo"><img src="img/attractionLogos/cpSoCal.png"></div>
 						<div class="reviews">
 							<img src="img/reviewStars4-5.png" alt="ReviewStars4 5">
 							4.5/5 <span class="reviewCount">(<a href="">2,345 Reviews</a>)</span>
 						</div>
 						<div class="tabs">
 							<ul class="tabrow">
-							    <li class="selected"><a href="">2014 CityPASS</a></li>
-							    <li><a href="">2015 CityPASS</a></li>
+							    <li class="selected"><a href="">2014 Tickets</a></li>
+							    <li><a href="">2015 Tickets</a></li>
 							</ul>
 						</div>
-						<div class="tabMessage">For use starting on or before December, 31 2014</div>
-						<div class="ageGroup">
-							<div class="age">Ages 3-9<span class="save">Save 31%</span></div>
-							<div class="price">$289</div>
-							<div class="quantity">
-								<select>
-									<option>1</option>
-								</select>
+						<div class="tabMessage">
+							<div class="alert notification">
+								<div class="alert-icon"></div>
+								For use starting on or before December, 31 2014
 							</div>
-							<div style="clear:both;"></div>
 						</div>
 						<div class="ageGroup">
-							<div class="age">Ages 10+<span class="save">Save 25%</span></div>
-							<div class="price">$331</div>
-							<div class="quantity">
-								<select>
-									<option>1</option>
-								</select>
+							<div class="ageGroupLineItem">
+								<div class="age">Ages 3-9<span class="save">Save 31%</span></div>
+								<div class="price">$289</div>
+								<div class="quantity">
+									<select>
+										<option>1</option>
+									</select>
+								</div>
+								<div style="clear:both;"></div>
 							</div>
-							<div style="clear:both;"></div>
+						</div>
+						<div class="ageGroup">
+							<div class="ageGroupLineItem">
+								<div class="age">Ages 10+<span class="save">Save 25%</span></div>
+								<div class="price">$331</div>
+								<div class="quantity">
+									<select>
+										<option>1</option>
+									</select>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
 						</div>
 						<div class="addOns">
 							<div class="title">EXCLUSIVE CITYPASS.COM ADD-ONS</div>
@@ -68,7 +83,16 @@
 								<div class="addOnLabel">LEGOLAND California<span class="addOn_ages">Ages 3-9 <span class="price">+$51</span>   |  Ages 10+ <span class="price">+$58</span></span></div>
 							</div>
 						</div>
-						<div class="total">total:<span class="totalPrice save">$620</span></div>
+						<div class="pricing">
+							<div class="priceLineItem">
+								<div class="priceLabel">tax:</div>
+								<div class="value discount">included!</div>
+							</div>
+							<div class="priceLineItem">
+								<div class="priceLabel">total:</div>
+								<div class="value totalPrice save">$620</div>
+							</div>
+						</div>
 						<div class="nav">
 							<div class="btn buy">Add to cart <span class="btnCount">(2 cards)</span></div>
 						</div>
