@@ -5,7 +5,8 @@
 	border:1px solid $black2;@include rounded(3px);
 	.buyBoxPadding{
 		padding:10px 10px 15px 10px;
-		.cityLogo{text-align:center;}
+		h1{text-align:center;}
+		.smallCP{color:$black2;}
 		.reviews{
 			text-align:center;margin:6px 0 0 0;font-size:12px;font-weight:bold;
 			img{vertical-align:middle;}
@@ -30,7 +31,7 @@
 		.addOns{
 			.title{color:$gray-dark;text-transform:uppercase;}
 			.addOn{
-				font-weight:bold;font-size:14px;margin:10px 0;
+				font-weight:bold;font-size:13px;margin:8px 0;
 				input{float:left;margin:5px 0 0 0;}
 				.addOnLabel{margin:0 0 0 20px;color:$black2;}
 				.addOn_ages{
@@ -62,9 +63,8 @@
 
 @include screen(320px, 479px)
 {
-	.cityLogo{
-		img{height:40px;}
-	}
+	h1{font-size:18px;line-height:26px;font-weight:bold;}
+	.smallCP{font-size:15px;}
 	.age{font-size:14px;}
 	.save{font-size:12px;}
 	.price, .totalPrice{font-size:20px;}
@@ -82,9 +82,8 @@
 }
 @include min-screen(480px)
 {
-	.cityLogo{
-		img{height:50px;}
-	}
+	h1{font-size:18px;line-height:26px;font-weight:bold;}
+	.smallCP{font-size:15px;}
 	.age{font-size:14px;}
 	.save{font-size:12px;}
 	.price, .totalPrice{font-size:18px;}
@@ -101,9 +100,8 @@
 }
 @include min-screen(768px)
 {
-	.cityLogo{
-		img{height:60px;}
-	}
+	h1{font-size:20px;line-height:26px;font-weight:bold;}
+	.smallCP{font-size:16px;}
 	.age{font-size:16px;}
 	.save{font-size:14px;}
 	.price, .totalPrice{font-size:20px;}

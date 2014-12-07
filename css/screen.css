@@ -224,11 +224,38 @@ blockquote {
 .header {
   height: 46px;
   background-color: #000;
-  background-image: url("../img/attractionLogos/header-background.png");
+  background-image: url("../img/attractionLogos/header-background.png"); }
+  .header img {
+    margin: 7px 0 0 3px;
+    height: 30px; }
+
+.breadcrumb {
+  padding: 0 0 0 3px;
+  background-color: #000;
+  color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) ;
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) ;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) ; }
+  .breadcrumb a {
+    color: #fff;
+    padding: 0 6px 0 0; }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .breadcrumb a {
+    font-size: 14px;
+    line-height: 24px; } }
+@media screen and (min-width: 480px) {
+  .breadcrumb a {
+    font-size: 14px;
+    line-height: 26px; } }
+@media screen and (min-width: 768px) {
+  .breadcrumb a {
+    font-size: 14px;
+    line-height: 28px; } }
+@media screen and (min-width: 1024px) {
+  .breadcrumb a {
+    font-size: 14px;
+    line-height: 30px; } }
 .buyBoxWrap {
   margin: 0 10px;
   padding: 10px 0 0 0; }
@@ -240,8 +267,10 @@ blockquote {
   -webkit-border-radius: 3px; }
   .buyBox .buyBoxPadding {
     padding: 10px 10px 15px 10px; }
-    .buyBox .buyBoxPadding .cityLogo {
+    .buyBox .buyBoxPadding h1 {
       text-align: center; }
+    .buyBox .buyBoxPadding .smallCP {
+      color: #404040; }
     .buyBox .buyBoxPadding .reviews {
       text-align: center;
       margin: 6px 0 0 0;
@@ -328,8 +357,8 @@ blockquote {
       text-transform: uppercase; }
     .buyBox .buyBoxPadding .addOns .addOn {
       font-weight: bold;
-      font-size: 14px;
-      margin: 10px 0; }
+      font-size: 13px;
+      margin: 8px 0; }
       .buyBox .buyBoxPadding .addOns .addOn input {
         float: left;
         margin: 5px 0 0 0; }
@@ -374,8 +403,13 @@ blockquote {
       text-transform: capitalize; }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .cityLogo img {
-    height: 40px; }
+  h1 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold; }
+
+  .smallCP {
+    font-size: 15px; }
 
   .age {
     font-size: 14px; }
@@ -399,8 +433,13 @@ blockquote {
   .priceLabel, .discount {
     font-size: 12px; } }
 @media screen and (min-width: 480px) {
-  .cityLogo img {
-    height: 50px; }
+  h1 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold; }
+
+  .smallCP {
+    font-size: 15px; }
 
   .age {
     font-size: 14px; }
@@ -421,8 +460,13 @@ blockquote {
   .priceLabel, .discount {
     font-size: 12px; } }
 @media screen and (min-width: 768px) {
-  .cityLogo img {
-    height: 60px; }
+  h1 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold; }
+
+  .smallCP {
+    font-size: 16px; }
 
   .age {
     font-size: 16px; }
@@ -444,11 +488,11 @@ blockquote {
   .priceLabel, .discount {
     font-size: 12px; } }
 .carousel .carouselPadding {
-  margin: 0 10px 0 0; }
+  margin: 0 5px 0 0; }
   .carousel .carouselPadding .heroWrapper {
     background-size: cover; }
     .carousel .carouselPadding .heroWrapper .carouselMessage {
-      background: rgba(225, 225, 225, 0.6);
+      background: rgba(225, 225, 225, 0.7);
       position: absolute;
       bottom: 0;
       width: 100%;
@@ -460,13 +504,23 @@ blockquote {
       .carousel .carouselPadding .heroWrapper .carouselMessage .location {
         display: block;
         font-weight: bold; }
-  .carousel .carouselPadding .attractionSummary {
-    margin: 5px; }
-    .carousel .carouselPadding .attractionSummary img {
-      height: 40px;
-      float: left; }
-    .carousel .carouselPadding .attractionSummary .pitch {
-      margin-left: 110px; }
+.carousel .carouselNav {
+  margin: 5px 0 0 0;
+  text-align: center; }
+  .carousel .carouselNav a {
+    display: inline-block;
+    margin: 0 3px; }
+  .carousel .carouselNav div {
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #878787; }
+    .carousel .carouselNav div:hover {
+      background: #000; }
+  .carousel .carouselNav .active {
+    background: #000; }
 .carousel .attractionListWrap {
   margin: 5px 10px 10px 10px; }
 .carousel .attractionList .attractionTile {
@@ -503,8 +557,7 @@ blockquote {
   .carousel {
     margin: 0 0 10px 0; }
     .carousel .carouselPadding {
-      margin: 0 0 15px 0;
-      height: 200px; }
+      margin: 0; }
       .carousel .carouselPadding .heroWrapper {
         height: 200px; }
     .carousel .attractionList {

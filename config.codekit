@@ -971,17 +971,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/img\/attractionLogos\/cpSoCal.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 16356,
-		"inputAbbreviatedPath": "\/img\/attractionLogos\/cpSoCal.png",
-		"outputAbbreviatedPath": "\/img\/attractionLogos\/cpSoCal.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/attractionLogos\/disneyCalifornia.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1026,6 +1015,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/attractionLogos\/soCal\/cpCard-SoCal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16356,
+		"inputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/cpCard-SoCal.png",
+		"outputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/cpCard-SoCal.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/attractionLogos\/soCal\/cpLogo-soCal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7529,
+		"inputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/cpLogo-soCal.png",
+		"outputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/cpLogo-soCal.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/attractionLogos\/universalHollywood.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1037,6 +1048,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/carouselImgs\/soCal\/00-soCal.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 198845,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/00-soCal.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/00-soCal.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carouselImgs\/soCal\/01-soCal.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.00919e+06,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/01-soCal.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/01-soCal.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carouselImgs\/soCal\/02-soCal.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 666651,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/02-soCal.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/02-soCal.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carouselImgs\/soCal\/03-soCal.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.03476e+06,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/03-soCal.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/03-soCal.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carouselImgs\/soCal\/04-soCal.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 985241,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/04-soCal.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/04-soCal.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/carouselImgs\/soCal\/intro.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1044,17 +1110,6 @@
 		"initialSize": 128499,
 		"inputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/intro.jpg",
 		"outputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/intro.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/cityPass-socal.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 7529,
-		"inputAbbreviatedPath": "\/img\/cityPass-socal.png",
-		"outputAbbreviatedPath": "\/img\/cityPass-socal.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

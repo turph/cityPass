@@ -1,4 +1,36 @@
 .header{
 	height:46px;background-color:$black;background-image:url('../img/attractionLogos/header-background.png');
+	img{margin:7px 0 0 3px;height:30px;}
+}
+.breadcrumb{
+	padding:0 0 0 3px;background-color:$black;color:$white;
 	@include box-shadow(0, 2px, 4px, rgba(0, 0, 0, 0.5));
+	a{color:$white;padding:0 6px 0 0;}
+}
+
+
+
+@include screen(320px, 479px)
+{
+	.breadcrumb{
+		a{font-size:14px;line-height:24px;}
+	}
+}
+@include min-screen(480px)
+{
+	.breadcrumb{
+		a{font-size:14px;line-height:26px;}
+	}
+}
+@include min-screen(768px)
+{
+	.breadcrumb{
+		a{font-size:14px;line-height:28px;}
+	}
+}
+@include min-screen(1024px)
+{
+	.breadcrumb{
+		a{font-size:14px;line-height:30px;}
+	}
 }

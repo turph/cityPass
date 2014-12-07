@@ -5,6 +5,14 @@
   -moz-border-radius: $radius;
   -webkit-border-radius: $radius;
 }
+@mixin cirle($width, $height, $color) {
+  width:$width;
+  height:$height;
+  -moz-border-radius:50%; 
+  -webkit-border-radius:50%; 
+  border-radius:50%;
+  background:$color;
+}
 
 @mixin font-smoothing($value: antialiased) {
   @if $value == antialiased {

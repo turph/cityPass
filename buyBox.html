@@ -4,38 +4,139 @@
 		<meta name="viewport" content="width=device-width">
 		<title></title>
 		<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" title="no title" charset="utf-8">
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	</head>
+<script>
+	$(document).ready (function () {
+		$('#carouselNav0').click (function () {
+			$('#carousel0').show ();
+			$('#carousel1, #carousel2, #carousel3, #carousel4').hide ();
+			$('#carouselNav0 > div').addClass('active');
+			$('#carouselNav1 > div, #carouselNav2 > div, #carouselNav3 > div, #carouselNav4 > div').removeClass('active');
+			$('.breadcrumb > a:eq(1)').text("4 Attractions + 2 Add-ons")
+			return false;
+		});
+		$('#carouselNav1').click (function () {
+			$('#carousel1').show ();
+			$('#carousel0, #carousel2, #carousel3, #carousel4').hide ();
+			$('#carouselNav1 > div').addClass('active');
+			$('#carouselNav0 > div, #carouselNav2 > div, #carouselNav3 > div, #carouselNav4 > div').removeClass('active');
+			$('.breadcrumb > a:eq(1)').text("Disneyland Resort")
+			return false;
+		});
+		$('#carouselNav2').click (function () {
+			$('#carousel2').show ();
+			$('#carousel0, #carousel1, #carousel3, #carousel4').hide ();
+			$('#carouselNav2 > div').addClass('active');
+			$('#carouselNav0 > div, #carouselNav1 > div, #carouselNav3 > div, #carouselNav4 > div').removeClass('active');
+			$('.breadcrumb > a:eq(1)').text("Universal Studios Hollywood")
+			return false;
+		});
+		$('#carouselNav3').click (function () {
+			$('#carousel3').show ();
+			$('#carousel0, #carousel1, #carousel2, #carousel4').hide ();
+			$('#carouselNav3 > div').addClass('active');
+			$('#carouselNav0 > div, #carouselNav1 > div, #carouselNav2 > div, #carouselNav4 > div').removeClass('active');
+			$('.breadcrumb > a:eq(1)').text("Disney California Adventure")
+			return false;
+		});
+		$('#carouselNav4').click (function () {
+			$('#carousel4').show ();
+			$('#carousel0, #carousel1, #carousel2, #carousel3').hide ();
+			$('#carouselNav4 > div').addClass('active');
+			$('#carouselNav0 > div, #carouselNav1 > div, #carouselNav2 > div, #carouselNav3 > div').removeClass('active');
+			$('.breadcrumb > a:eq(1)').text("SeaWorld San Diego")
+			return false;
+		});
+
+		$('#facetAllBrands').click(function(event) {
+      event.preventDefault(); // because it is an anchor element
+      $('.facetPanel').toggle();
+      $('.facetPanel').animate({
+          left: '200px'
+      });
+		});
+		$('#facetAllSizes').click(function(event) {
+      event.preventDefault(); // because it is an anchor element
+      $('.facetPanel').toggle();
+			$('.facetPanel').css({"top":"405px"});
+      $('.facetPanel').animate({
+          left: '200px'
+      });
+			$('#sizes').show ();
+			$('#brands, #colors, #recs').hide ();
+			$('#nav-Sizes').addClass('navHere');
+			$('#nav-Brands, #nav-Colors, #nav-Recs').removeClass('navHere');
+		});
+		$('#facetAllRecs').click(function(event) {
+      event.preventDefault(); // because it is an anchor element
+      $('.facetPanel').toggle();
+			$('.facetPanel').css({"top":"905px"});
+      $('.facetPanel').animate({
+          left: '200px'
+      });
+			$('#recs').show ();
+			$('#brands, #sizes, #colors').hide ();
+			$('#nav-Recs').addClass('navHere');
+			$('#nav-Brands, #nav-Sizes, #nav-Colors').removeClass('navHere');
+		});
+	})
+</script>
 	<body class="product">
 		<div class="header">
+			<img src="img/cpLogo.png" alt="CpLogo">
 		</div>
 		<div class="atf">
+			<div class="breadcrumb">
+			<a href="">Southern California</a>/
+			<a href="">4 Attractions + 2 Add-ons</a>
+		</div>
 			<div class="carousel">
 				<div class="carouselPadding">
-					<div id="carousel1" class="heroWrapper" style="background-image:url('http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/intro.jpg')">
+					<div id="carousel0" class="heroWrapper" style="background-image:url('http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/00-soCal.jpg')">
 						<div class="carouselMessage">
-							<div class="carouselTitle"><span class="location">Southern California</span>One card, 4 attractions</div>
+							<div class="carouselTitle">
+								<span class="location">4 Attractions | Save $112 or more</span>Southern California's best attractions</div>
 						</div>
 					</div>
-					<div class="attractionSummary">
-						<img src="img/attractionLogos/soCal/cpLogo-SoCal.png" alt="CpSoCal">
-						<div class="pitch">Save $112 or More and skip ticket lines at Southern California's best attractions</div>
-					</div>
-					<div class="attractionListWrap">
-						<div class="attractionList">
-							<div class="attractionTile cpTile"><a href=""><img src="img/attractionLogos/soCal/cpCard-SoCal.png"><div class="attractionName">Southern California<span class="attractionNameSub">CityPASS gives you admission to:</span></div></a></div>
-							<div class="attractionTile carouselActive"><a href=""><img src="img/attractionLogos/disneyLand.png"><div class="attractionName">Disneyland Resort<span class="attractionNameSub">We can say something here as well</span></div></a></div>
-							<div class="attractionTile"><a href=""><img src="img/attractionLogos/disneyCalifornia.png"><div class="attractionName">Disney California Adventure<span class="attractionNameSub">We can say something here as well</span></div></a></div>
-							<div class="attractionTile"><a href=""><img src="img/attractionLogos/universalHollywood.png"><div class="attractionName">Universal Studios Hollywood<span class="attractionNameSub">We can say something here as well</span></div></a></div>
-							<div class="attractionTile"><a href=""><img src="img/attractionLogos/seaWorld.png"><div class="attractionName">SeaWorld San Diego</div></a></div>
+					<div id="carousel1" class="heroWrapper" style="background-image:url('http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/01-soCal.jpg'); display:none;">
+						<div class="carouselMessage">
+							<div class="carouselTitle">
+								<span class="location">Disneyland Resort</span>Fill your day with wonder and imagination</div>
 						</div>
 					</div>
+					<div id="carousel2" class="heroWrapper" style="background-image:url('http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/02-soCal.jpg'); display:none;">
+						<div class="carouselMessage">
+							<div class="carouselTitle">
+								<span class="location">Universal Studios Hollywood</span>The ultimate movie experience</div>
+						</div>
+					</div>
+					<div id="carousel3" class="heroWrapper" style="background-image:url('http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/03-soCal.jpg'); display:none;">
+						<div class="carouselMessage">
+							<div class="carouselTitle">
+								<span class="location">Disney California Adventure</span>Immerse yourself in Disney and Pixar Stories</div>
+						</div>
+					</div>
+					<div id="carousel4" class="heroWrapper" style="background-image:url('http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/04-soCal.jpg'); display:none;">
+						<div class="carouselMessage">
+							<div class="carouselTitle">
+								<span class="location">SeaWorld San Diego</span>Connect with the sea like never before</div>
+						</div>
+					</div>
+					<div class="carouselNav">
+						<a id="carouselNav0" href="" title="CityPass Southern California"><div class="active"></div></a>
+						<a id="carouselNav1" href="" title="Disneyland Resort"><div></div></a>
+						<a id="carouselNav2" href="" title="Universal Studios Hollywood"><div></div></a>
+						<a id="carouselNav3" href="" title="Disney California Adventure"><div></div></a>
+						<a id="carouselNav4" href="" title="SeaWorld San Diego"><div></div></a>
+					</div>
+					<div></div>
 				</div>
 			</div>
 			<div class="buyBoxWrap">
 				<div class="buybox">
 					<div class="buyBoxPadding">
-						<div class="cityLogo"><img src="img/attractionLogos/soCal/cpCard-SoCal.png"></div>
+						<h1>Southern California <span class="smallCP">CityPASS</span></h1>
 						<div class="reviews">
 							<img src="img/reviewStars4-5.png" alt="ReviewStars4 5">
 							4.5/5 <span class="reviewCount">(<a href="">2,345 Reviews</a>)</span>
