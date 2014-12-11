@@ -1,0 +1,49 @@
+.featureList{
+	float:left;width:100%;position:relative;
+	.feature{
+		text-align:left;padding:10px 0 0 0;position:relative;@include box-shadow(0, 2px, 5px, rgba(0, 0, 0, 0.35), inset);
+		.featureTitle{
+			padding:0 10px;height:40px;width:100%;color:white;
+			h3{color:white;font-weight:bold;}
+			h4{color:white;font-weight:normal;}
+		}
+		.featureDetails{
+			@include box-shadow(0, 2px, 5px, rgba(0, 0, 0, 0.35), inset);
+			padding:10px;
+			p{font-size:14px;}
+		}
+	}
+	#feature1				{background-color:$cyan500;}
+	#featureDetails1{background-color:$cyan100;}
+	#feature2				{background-color:$lightBlue500;}
+	#featureDetails2{background-color:$lightBlue100;}
+	#feature3				{background-color:$lightGreen500;}
+	#featureDetails3{background-color:$lightGreen100;}
+	#feature4				{background-color:$lime500;}
+	#featureDetails4{background-color:$lime100;}
+	#feature5				{background-color:$amber500;}
+	#featureDetails5{background-color:$amber100;}
+}
+
+
+
+@include screen(320px, 479px)
+{
+	.featureList{
+		.featureTitle{
+			h3{font-size:16px;line-height:18px;}
+			h4{font-size:14px;line-height:16px;}
+			.featureDetails{
+			}
+		}
+	}
+}
+@include min-screen(480px)
+{
+}
+@include min-screen(768px)
+{
+}
+@include min-screen(1024px)
+{
+}

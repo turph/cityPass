@@ -45,6 +45,7 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+/* Feature Tiles */
 .alert {
   padding: 10px;
   font-size: 12px; }
@@ -183,6 +184,21 @@ blockquote {
       position: relative; }
   .product .atf .buyBox {
     float: left; }
+.product .sectionTitle {
+  text-align: center;
+  float: left;
+  width: 100%;
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #878787; }
+  .product .sectionTitle .sectionSubTitle {
+    display: block;
+    color: #666666; }
+.product section {
+  float: left;
+  width: 100%; }
+.product section:nth-child(odd) {
+  background-color: #fafafa; }
 
 .price {
   color: #ff9900; }
@@ -199,7 +215,13 @@ blockquote {
     width: 100%; }
   .product .atf .buyBox {
     clear: both;
-    width: 100%; } }
+    width: 100%; }
+  .product .sectionTitle {
+    margin: 30px 0 6px 0;
+    font-size: 18px; }
+    .product .sectionTitle .sectionSubTitle {
+      font-size: 14px;
+      line-height: 24px; } }
 @media screen and (min-width: 480px) {
   .product .atf .carousel {
     width: 49%; }
@@ -702,3 +724,60 @@ blockquote {
       .carousel .attractionList .cpTile .attractionNameSub {
         display: block;
         font-size: 12px; } }
+.featureList {
+  float: left;
+  width: 100%;
+  position: relative; }
+  .featureList .feature {
+    text-align: left;
+    padding: 10px 0 0 0;
+    position: relative;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset; }
+    .featureList .feature .featureTitle {
+      padding: 0 10px;
+      height: 40px;
+      width: 100%;
+      color: white; }
+      .featureList .feature .featureTitle h3 {
+        color: white;
+        font-weight: bold; }
+      .featureList .feature .featureTitle h4 {
+        color: white;
+        font-weight: normal; }
+    .featureList .feature .featureDetails {
+      -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
+      -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
+      padding: 10px; }
+      .featureList .feature .featureDetails p {
+        font-size: 14px; }
+  .featureList #feature1 {
+    background-color: #00BCD4; }
+  .featureList #featureDetails1 {
+    background-color: #B2EBF2; }
+  .featureList #feature2 {
+    background-color: #03A9F4; }
+  .featureList #featureDetails2 {
+    background-color: #B3E5FC; }
+  .featureList #feature3 {
+    background-color: #8BC34A; }
+  .featureList #featureDetails3 {
+    background-color: #DCEDC8; }
+  .featureList #feature4 {
+    background-color: #CDDC39; }
+  .featureList #featureDetails4 {
+    background-color: #F0F4C3; }
+  .featureList #feature5 {
+    background-color: #FFC107; }
+  .featureList #featureDetails5 {
+    background-color: #FFECB3; }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .featureList .featureTitle h3 {
+    font-size: 16px;
+    line-height: 18px; }
+  .featureList .featureTitle h4 {
+    font-size: 14px;
+    line-height: 16px; } }

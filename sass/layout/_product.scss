@@ -7,6 +7,13 @@
 		}
 		.buyBox{float:left;}		
 	}
+	.sectionTitle{
+		text-align:center;float:left;width:100%;text-transform:capitalize;font-weight:normal;color:$gray-medium;
+		.sectionSubTitle{display:block;color:$gray-dark;}
+	}
+	section{float:left;width:100%;}
+	section:nth-child(odd){background-color:$gray-lightest;}
+	
 }
 .price{color:$orange;}
 .save{color:$red;}
@@ -19,6 +26,10 @@
 		.atf{
 			.carousel{@include clear;width:100%;}
 			.buyBox{@include clear;width:100%;}
+		}
+		.sectionTitle{
+			margin:30px 0 6px 0;font-size:18px;
+			.sectionSubTitle{font-size:14px;line-height:24px;}
 		}
 	}
 }

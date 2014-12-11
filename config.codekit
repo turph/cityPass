@@ -1103,13 +1103,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/carouselImgs\/soCal\/intro.jpg": {
-		"fileType": 16384,
+	"\/img\/cpLogo.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 128499,
-		"inputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/intro.jpg",
-		"outputAbbreviatedPath": "\/img\/carouselImgs\/soCal\/intro.jpg",
+		"initialSize": 3913,
+		"inputAbbreviatedPath": "\/img\/cpLogo.png",
+		"outputAbbreviatedPath": "\/img\/cpLogo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1259,6 +1259,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/sass\/components\/_features.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/components\/_features.scss",
+		"outputAbbreviatedPath": "\/css\/_features.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/sass\/components\/_header.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1354,6 +1370,15 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/southern-california.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/southern-california.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
