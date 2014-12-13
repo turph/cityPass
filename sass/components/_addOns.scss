@@ -1,0 +1,61 @@
+.addOnList{
+	float:left;padding:10px 0 0 0;width:100%;background-color:$teal50;@include box-shadow(0, 2px, 5px, rgba(0, 0, 0, 0.35), inset);
+  overflow: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+	.addOnWrapper{
+		width:10000px;
+		.addOnTile{
+			padding:10px;
+			float:left;border:1px solid $teal200;@include rounded(3px);background-color:$white;
+			.addOnTitle, .addOnSubTitle, .addOnSubTitleCity{text-align:center;}
+			.addOnTitle{
+				color:$teal600;font-weight:bold;
+				img{width:80%;}
+			}
+			.addOnSubTitle{display:block;color:$gray-medium;font-weight:normal;}
+			.addOnSubTitleCity{display:block;color:$gray-dark;}
+			.ageGroup{
+				border-bottom:1px solid $gray-light;display:table;width:100%;
+				.ageGroupLineItem{margin:0 10px;display:table-row;}
+				.age, .price, .quantity{display:table-cell;vertical-align:bottom;}
+				.price, .quantity{text-align:right;}
+				.age{font-weight:normal;color:$gray-medium;}
+				.save{margin:0 0 0 5px;display:block;font-weight:normal;}
+				.price{margin:0 0 0 15px;}
+			}
+			.addOnNav{
+				margin:10px 0 0 0;
+			}
+		}
+	}
+}
+
+@include screen(320px, 479px)
+{
+	.addOnList{
+		.addOnWrapper{
+			.addOnTile{
+				width:220px;margin:0 0 10px 10px;
+				.addOnTitle, .addOnSubTitle, .addOnSubTitleCity{font-size:14px;}
+				.addOnTitle{
+					img{margin:10px 0 5px 0;}
+				}
+				.addOnSubTitle{margin:5px 5px 10px 5px;line-height:18px;}
+				.addOnSubTitleCity{margin:0 0 3px 0;}
+				.ageGroup{
+					.price{font-weight:normal;font-size:18px;}
+				}
+			}
+		}
+	}
+}
+@include min-screen(480px)
+{
+}
+@include min-screen(768px)
+{
+}
+@include min-screen(1024px)
+{
+}

@@ -45,6 +45,10 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
+/* Rounding things */
+/* Typography things */
+/* Navigational things */
+/* Shadows */
 /* Feature Tiles */
 .alert {
   padding: 10px;
@@ -193,12 +197,10 @@ blockquote {
   color: #878787; }
   .product .sectionTitle .sectionSubTitle {
     display: block;
-    color: #666666; }
+    color: #878787; }
 .product section {
   float: left;
   width: 100%; }
-.product section:nth-child(odd) {
-  background-color: #fafafa; }
 
 .price {
   color: #ff9900; }
@@ -257,10 +259,15 @@ blockquote {
   color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) ;
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) ;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) ; }
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) ;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
   .breadcrumb a {
     color: #fff;
     padding: 0 6px 0 0; }
+    .breadcrumb a:hover {
+      text-decoration: none; }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .breadcrumb a {
@@ -724,6 +731,81 @@ blockquote {
       .carousel .attractionList .cpTile .attractionNameSub {
         display: block;
         font-size: 12px; } }
+.addOnList {
+  float: left;
+  padding: 10px 0 0 0;
+  width: 100%;
+  background-color: #E0F2F1;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
+  overflow: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; }
+  .addOnList .addOnWrapper {
+    width: 10000px; }
+    .addOnList .addOnWrapper .addOnTile {
+      padding: 10px;
+      float: left;
+      border: 1px solid #80CBC4;
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      background-color: #fff; }
+      .addOnList .addOnWrapper .addOnTile .addOnTitle, .addOnList .addOnWrapper .addOnTile .addOnSubTitle, .addOnList .addOnWrapper .addOnTile .addOnSubTitleCity {
+        text-align: center; }
+      .addOnList .addOnWrapper .addOnTile .addOnTitle {
+        color: #00897B;
+        font-weight: bold; }
+        .addOnList .addOnWrapper .addOnTile .addOnTitle img {
+          width: 80%; }
+      .addOnList .addOnWrapper .addOnTile .addOnSubTitle {
+        display: block;
+        color: #878787;
+        font-weight: normal; }
+      .addOnList .addOnWrapper .addOnTile .addOnSubTitleCity {
+        display: block;
+        color: #666666; }
+      .addOnList .addOnWrapper .addOnTile .ageGroup {
+        border-bottom: 1px solid #ededed;
+        display: table;
+        width: 100%; }
+        .addOnList .addOnWrapper .addOnTile .ageGroup .ageGroupLineItem {
+          margin: 0 10px;
+          display: table-row; }
+        .addOnList .addOnWrapper .addOnTile .ageGroup .age, .addOnList .addOnWrapper .addOnTile .ageGroup .price, .addOnList .addOnWrapper .addOnTile .ageGroup .quantity {
+          display: table-cell;
+          vertical-align: bottom; }
+        .addOnList .addOnWrapper .addOnTile .ageGroup .price, .addOnList .addOnWrapper .addOnTile .ageGroup .quantity {
+          text-align: right; }
+        .addOnList .addOnWrapper .addOnTile .ageGroup .age {
+          font-weight: normal;
+          color: #878787; }
+        .addOnList .addOnWrapper .addOnTile .ageGroup .save {
+          margin: 0 0 0 5px;
+          display: block;
+          font-weight: normal; }
+        .addOnList .addOnWrapper .addOnTile .ageGroup .price {
+          margin: 0 0 0 15px; }
+      .addOnList .addOnWrapper .addOnTile .addOnNav {
+        margin: 10px 0 0 0; }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .addOnList .addOnWrapper .addOnTile {
+    width: 220px;
+    margin: 0 0 10px 10px; }
+    .addOnList .addOnWrapper .addOnTile .addOnTitle, .addOnList .addOnWrapper .addOnTile .addOnSubTitle, .addOnList .addOnWrapper .addOnTile .addOnSubTitleCity {
+      font-size: 14px; }
+    .addOnList .addOnWrapper .addOnTile .addOnTitle img {
+      margin: 10px 0 5px 0; }
+    .addOnList .addOnWrapper .addOnTile .addOnSubTitle {
+      margin: 5px 5px 10px 5px;
+      line-height: 18px; }
+    .addOnList .addOnWrapper .addOnTile .addOnSubTitleCity {
+      margin: 0 0 3px 0; }
+    .addOnList .addOnWrapper .addOnTile .ageGroup .price {
+      font-weight: normal;
+      font-size: 18px; } }
 .featureList {
   float: left;
   width: 100%;
@@ -735,24 +817,25 @@ blockquote {
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
     -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset; }
+    .featureList .feature a {
+      text-decoration: none; }
+      .featureList .feature a:hover {
+        text-decoration: none; }
     .featureList .feature .featureTitle {
-      padding: 0 10px;
       height: 40px;
-      width: 100%;
-      color: white; }
+      width: 100%; }
+      .featureList .feature .featureTitle h3, .featureList .feature .featureTitle h4 {
+        padding: 0 10px;
+        color: #fff; }
       .featureList .feature .featureTitle h3 {
-        color: white;
         font-weight: bold; }
       .featureList .feature .featureTitle h4 {
-        color: white;
         font-weight: normal; }
     .featureList .feature .featureDetails {
       -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
       -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
       padding: 10px; }
-      .featureList .feature .featureDetails p {
-        font-size: 14px; }
   .featureList #feature1 {
     background-color: #00BCD4; }
   .featureList #featureDetails1 {
@@ -780,4 +863,6 @@ blockquote {
     line-height: 18px; }
   .featureList .featureTitle h4 {
     font-size: 14px;
-    line-height: 16px; } }
+    line-height: 16px; }
+  .featureList .featureDetails p {
+    font-size: 14px; } }

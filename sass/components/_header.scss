@@ -5,7 +5,11 @@
 .breadcrumb{
 	padding:0 0 0 3px;background-color:$black;color:$white;
 	@include box-shadow(0, 2px, 4px, rgba(0, 0, 0, 0.5));
-	a{color:$white;padding:0 6px 0 0;}
+	@include ellipsis;
+	a{
+		color:$white;padding:0 6px 0 0;
+		&:hover{text-decoration:none;}
+	}
 }
 
 

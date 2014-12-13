@@ -13,7 +13,6 @@
 			$('#carousel1, #carousel2, #carousel3, #carousel4').hide ();
 			$('#carouselNav0 > div').addClass('active');
 			$('#carouselNav1 > div, #carouselNav2 > div, #carouselNav3 > div, #carouselNav4 > div').removeClass('active');
-			$('.breadcrumb > a:eq(1)').text("4 Attractions + 2 Add-ons")
 			return false;
 		});
 		$('#carouselNav1').click (function () {
@@ -21,7 +20,6 @@
 			$('#carousel0, #carousel2, #carousel3, #carousel4').hide ();
 			$('#carouselNav1 > div').addClass('active');
 			$('#carouselNav0 > div, #carouselNav2 > div, #carouselNav3 > div, #carouselNav4 > div').removeClass('active');
-			$('.breadcrumb > a:eq(1)').text("Disneyland Resort")
 			return false;
 		});
 		$('#carouselNav2').click (function () {
@@ -29,7 +27,6 @@
 			$('#carousel0, #carousel1, #carousel3, #carousel4').hide ();
 			$('#carouselNav2 > div').addClass('active');
 			$('#carouselNav0 > div, #carouselNav1 > div, #carouselNav3 > div, #carouselNav4 > div').removeClass('active');
-			$('.breadcrumb > a:eq(1)').text("Universal Studios Hollywood")
 			return false;
 		});
 		$('#carouselNav3').click (function () {
@@ -37,7 +34,6 @@
 			$('#carousel0, #carousel1, #carousel2, #carousel4').hide ();
 			$('#carouselNav3 > div').addClass('active');
 			$('#carouselNav0 > div, #carouselNav1 > div, #carouselNav2 > div, #carouselNav4 > div').removeClass('active');
-			$('.breadcrumb > a:eq(1)').text("Disney California Adventure")
 			return false;
 		});
 		$('#carouselNav4').click (function () {
@@ -45,10 +41,14 @@
 			$('#carousel0, #carousel1, #carousel2, #carousel3').hide ();
 			$('#carouselNav4 > div').addClass('active');
 			$('#carouselNav0 > div, #carouselNav1 > div, #carouselNav2 > div, #carouselNav3 > div').removeClass('active');
-			$('.breadcrumb > a:eq(1)').text("SeaWorld San Diego")
 			return false;
 		});
 
+		$('#navAttraction').click (function () {
+			$('#navCity').text("...")
+			return false;
+		});
+		
 		$('#feature1').click (function () {
 			$('#featureDetails1').slideToggle ();
 			$('#featureDetails2, #featureDetails3, #featureDetails4').slideUp ();
@@ -78,7 +78,7 @@
 		});
 		$('#feature4').click (function () {
 			$('#featureDetails4').slideToggle ();
-			$('#featureDetails1, #featureDetails2, #featureDetails2').slideUp ();
+			$('#featureDetails1, #featureDetails2, #featureDetails3').slideUp ();
 			$('#feature4').animate(500);
 				$(this).animate(500).promise().done(function(){
 				$('html,body').animate({scrollTop: $(this).offset().top},500);
@@ -94,8 +94,8 @@
 		</div>
 		<div class="atf">
 			<div class="breadcrumb">
-				<a href="">Southern California</a>/
-				<a href="">4 Attractions + 2 Add-ons</a>
+				<a id="navCity" href="">Southern California</a>/
+				<a id="navAttraction" href="">Disneyland Resort & Disney California Adventure</a>
 			</div>
 			<div class="carousel">
 				<div class="carouselPadding">
@@ -220,11 +220,68 @@
 				</div>
 			</div>
 		</div>
-		<section><!-- Add-ons -->
-			<div class="sectionTitle">Exclusive CityPASS Attraction add-ons<span class="sectionSubTitle">See more. Save more.</span></div>
-			<div class="addOnList">add-on tiles go in here</div>
+		<section id="addOns"><!-- Add-ons -->
+			<div class="sectionTitle">Attraction add-ons<span class="sectionSubTitle">Exclusive CityPASS deals for you</span></div>
+			<div class="addOnList">
+				<div class="addOnWrapper">
+					<div class="addOnTile">
+						<div class="addOnTitle">
+							San Diego Zoo or Safari Park
+							<img src="img/attractionLogos/soCal/sanDiego_bw.png" alt="SanDiego">
+						</div>
+						<div class="addOnSubTitle">
+							Add a one-time admission to either San Diego Zoo or San Diego Zoo Safari Park</span>
+						</div>
+						<div class="ageGroup">
+							<div class="ageGroupLineItem">
+								<div class="age">Ages 3-9<span class="save">Save 31%</span></div>
+								<div class="price">$26</div>
+								<div style="clear:both;"></div>
+							</div>
+						</div>
+						<div class="ageGroup">
+							<div class="ageGroupLineItem">
+								<div class="age">Ages 10+<span class="save">Save 25%</span></div>
+								<div class="price">$36</div>
+								<div style="clear:both;"></div>
+							</div>
+						</div>
+						<div class="addOnNav">
+							<a href="">Upgrade button</a>
+							<a href="">Details</a>
+						</div>
+					</div>
+					<div class="addOnTile">
+						<div class="addOnTitle">
+							Legoland California
+							<img src="img/attractionLogos/soCal/legoland_bw.png" alt="Legoland">
+						</div>
+						<div class="addOnSubTitle">
+							Add a one-time admission to LEGOLAND California</span>
+						</div>
+						<div class="ageGroup">
+							<div class="ageGroupLineItem">
+								<div class="age">Ages 3-9<span class="save">Save 11%</span></div>
+								<div class="price">$51</div>
+								<div style="clear:both;"></div>
+							</div>
+						</div>
+						<div class="ageGroup">
+							<div class="ageGroupLineItem">
+								<div class="age">Ages 10+<span class="save">Save 13%</span></div>
+								<div class="price">$58</div>
+								<div style="clear:both;"></div>
+							</div>
+						</div>
+						<div class="addOnNav">
+							<a href="">Upgrade button</a>
+							<a href="">Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section><!-- Features -->
+		<section id="features"><!-- Features -->
 			<div class="sectionTitle">Southern california pass features<span class="sectionSubTitle">The CityPASS experience</span></div>
 			<div class="featureList">
 				<div id="feature1" class="feature">

@@ -1,5 +1,6 @@
 @mixin clear{clear:both;}
 
+/* Rounding things */
 @mixin rounded($radius) {
   border-radius: $radius;
   -moz-border-radius: $radius;
@@ -14,6 +15,7 @@
   background:$color;
 }
 
+/* Typography things */
 @mixin font-smoothing($value: antialiased) {
   @if $value == antialiased {
     -webkit-font-smoothing: antialiased;
@@ -24,7 +26,11 @@
     -moz-osx-font-smoothing: auto;
   }
 }
+@mixin ellipsis{
+	text-overflow:ellipsis;white-space:nowrap;overflow:hidden;
+}
 
+/* Navigational things */
 @mixin tabList{
 	.tabrow{margin:0;padding:0;list-style:none;line-height:24px;position:relative;}
 	.tabrow li{
@@ -46,6 +52,7 @@
 	}
 }
 
+/* Shadows */
 @mixin box-shadow($h-shadow, $v-shadow, $blur-shadow, $color-shadow, $inset:"") {
     -webkit-box-shadow:	$h-shadow $v-shadow $blur-shadow $color-shadow #{$inset};
     -moz-box-shadow:		$h-shadow $v-shadow $blur-shadow $color-shadow #{$inset};

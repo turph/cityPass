@@ -9,11 +9,9 @@
 	}
 	.sectionTitle{
 		text-align:center;float:left;width:100%;text-transform:capitalize;font-weight:normal;color:$gray-medium;
-		.sectionSubTitle{display:block;color:$gray-dark;}
+		.sectionSubTitle{display:block;color:$gray-medium;}
 	}
-	section{float:left;width:100%;}
-	section:nth-child(odd){background-color:$gray-lightest;}
-	
+	section{float:left;width:100%;}	
 }
 .price{color:$orange;}
 .save{color:$red;}

@@ -1004,6 +1004,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/attractionLogos\/sanDiego.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9660,
+		"inputAbbreviatedPath": "\/img\/attractionLogos\/sanDiego.jpg",
+		"outputAbbreviatedPath": "\/img\/attractionLogos\/sanDiego.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/attractionLogos\/seaWorld.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1033,6 +1044,17 @@
 		"initialSize": 7529,
 		"inputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/cpLogo-soCal.png",
 		"outputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/cpLogo-soCal.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/attractionLogos\/soCal\/sanDiego_bw.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24797,
+		"inputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/sanDiego_bw.png",
+		"outputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/sanDiego_bw.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1220,6 +1242,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/base\/_typography.scss",
 		"outputAbbreviatedPath": "\/css\/_typography.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/components\/_addOns.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/components\/_addOns.scss",
+		"outputAbbreviatedPath": "\/css\/_addOns.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
