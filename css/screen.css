@@ -209,7 +209,8 @@ blockquote {
   color: #CF534D; }
 
 .discount {
-  color: #404040; }
+  color: #878787;
+  text-decoration: line-through; }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .product .atf .carousel {
@@ -371,16 +372,22 @@ blockquote {
       .buyBox .buyBoxPadding .ageGroup .age {
         font-weight: bold;
         color: #404040; }
-      .buyBox .buyBoxPadding .ageGroup .save {
+      .buyBox .buyBoxPadding .ageGroup .ageGroupDiscount {
         margin: 0 0 0 5px;
-        display: block;
+        color: #878787;
         font-weight: normal; }
+        .buyBox .buyBoxPadding .ageGroup .ageGroupDiscount .discount {
+          margin: 0 0 0 2px; }
+        .buyBox .buyBoxPadding .ageGroup .ageGroupDiscount .save {
+          margin: 0 0 0 5px; }
       .buyBox .buyBoxPadding .ageGroup .price {
         margin: 0 0 0 15px;
-        font-weight: bold; }
+        font-weight: bold;
+        vertical-align: bottom; }
       .buyBox .buyBoxPadding .ageGroup .quantity {
         width: 20%;
-        padding-left: 10px; }
+        padding: 0 0 3px 10px;
+        vertical-align: bottom; }
     .buyBox .buyBoxPadding .addOns .title {
       color: #666666;
       text-transform: uppercase; }
@@ -443,7 +450,7 @@ blockquote {
   .age {
     font-size: 14px; }
 
-  .save {
+  .ageGroupDiscount {
     font-size: 12px; }
 
   .price, .totalPrice {

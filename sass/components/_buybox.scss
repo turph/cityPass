@@ -24,9 +24,13 @@
 			.age, .price, .quantity{display:table-cell;vertical-align:bottom;}
 			.price, .quantity{text-align:right;}
 			.age{font-weight:bold;color:$black2;}
-			.save{margin:0 0 0 5px;display:block;font-weight:normal;}
-			.price{margin:0 0 0 15px;font-weight:bold;}
-			.quantity{width:20%;padding-left:10px;}
+			.ageGroupDiscount{
+				margin:0 0 0 5px;color:$gray-medium;font-weight:normal;
+				.discount{margin:0 0 0 2px;}
+				.save{margin:0 0 0 5px;}
+			}
+			.price{margin:0 0 0 15px;font-weight:bold;vertical-align:bottom;}
+			.quantity{width:20%;padding:0 0 3px 10px;vertical-align:bottom;}
 		}
 		.addOns{
 			.title{color:$gray-dark;text-transform:uppercase;}
@@ -66,7 +70,7 @@
 	h1{font-size:18px;line-height:26px;font-weight:bold;}
 	.smallCP{font-size:15px;}
 	.age{font-size:14px;}
-	.save{font-size:12px;}
+	.ageGroupDiscount{font-size:12px;}
 	.price, .totalPrice{font-size:20px;}
 	.addOns{
 		margin:5px 0 0 0;

@@ -15,7 +15,7 @@
 }
 .price{color:$orange;}
 .save{color:$red;}
-.discount{color:$black2;}
+.discount{color:$gray-medium;text-decoration:line-through;}
 
 
 @include screen(320px, 479px)
