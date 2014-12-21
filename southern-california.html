@@ -49,6 +49,15 @@
 			return false;
 		});
 		
+		$('#allAttractions').click (function () {
+			$('#includedAttractionList').slideToggle ();
+			$('#includedAttractionList').animate(500);
+				$(this).animate(500).promise().done(function(){
+				$('html,body').animate({scrollTop: $(this).offset().top},500);
+			});
+			return false;
+		});
+
 		$('#feature1').click (function () {
 			$('#featureDetails1').slideToggle ();
 			$('#featureDetails2, #featureDetails3, #featureDetails4').slideUp ();
@@ -135,10 +144,53 @@
 						<a id="carouselNav2" href="" title="Universal Studios Hollywood"><div></div></a>
 						<a id="carouselNav3" href="" title="Disney California Adventure"><div></div></a>
 						<a id="carouselNav4" href="" title="SeaWorld San Diego"><div></div></a>
+						<a id="allAttractions" href="" title="View All Attractions">4 Attractions &or;</a>
 					</div>
-					<div></div>
 				</div>
 			</div>
+			<section id="includedAttractionList" style="display:none;"><!-- Included Attractions -->
+				<div class="sectionTitle">One CityPass, 4 Attractions<span class="sectionSubTitle">visit Southern California's best</span></div>
+				<div class="attractionList includedAtt">
+					<div class="attractionWrapper">
+						<div class="attractionTile">
+							<div class="attractionTitle">
+								Disneyland Resort
+							</div>
+							<div class="attractionSubTitle">
+								CityPASS Admission
+								<span class="attractionCopy">Back-and-forth admission to both Disneyland® Park and Disney California Adventure® Park.</span>
+							</div>
+						</div>
+						<div class="attractionTile">
+							<div class="attractionTitle">
+								Disneyland California Adventure
+							</div>
+							<div class="attractionSubTitle">
+								CityPASS Admission
+								<span class="attractionCopy">Back-and-forth admission to both Disneyland® Park and Disney California Adventure® Park.</span>
+							</div>
+						</div>
+						<div class="attractionTile">
+							<div class="attractionTitle">
+								Universal Studios Hollywood
+							</div>
+							<div class="attractionSubTitle">
+								CityPASS Admission
+								<span class="attractionCopy">General theme park admission including the legendary behind-the-scenes Studio Tour, all rides and attractions.</span>
+							</div>
+						</div>
+						<div class="attractionTile">
+							<div class="attractionTitle">
+								SeaWorld San Diego
+							</div>
+							<div class="attractionSubTitle">
+								CityPASS Admission
+								<span class="attractionCopy">General admission to the world-famous aquatic theme park including all rides and shows.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<div class="buyBoxWrap">
 				<div class="buybox">
 					<div class="buyBoxPadding">
@@ -225,16 +277,16 @@
 				</div>
 			</div>
 		</div>
-		<section id="addOns"><!-- Add-ons -->
+		<section id="addOnAttractionList"><!-- Add-ons -->
 			<div class="sectionTitle">Attraction add-ons<span class="sectionSubTitle">Exclusive CityPASS deals for you</span></div>
-			<div class="addOnList">
-				<div class="addOnWrapper">
-					<div class="addOnTile">
-						<div class="addOnTitle">
+			<div class="attractionList addOnAtt">
+				<div class="attractionWrapper">
+					<div class="attractionTile">
+						<div class="attractionTitle">
 							San Diego Zoo or Safari Park
 							<img src="img/attractionLogos/soCal/sanDiego_bw.png" alt="SanDiego">
 						</div>
-						<div class="addOnSubTitle">
+						<div class="attractionSubTitle">
 							Add a one-time admission to either San Diego Zoo or San Diego Zoo Safari Park</span>
 						</div>
 						<div class="ageGroup">
@@ -251,17 +303,17 @@
 								<div style="clear:both;"></div>
 							</div>
 						</div>
-						<div class="addOnNav">
+						<div class="attractionNav">
 							<a href="">Upgrade button</a>
 							<a href="">Details</a>
 						</div>
 					</div>
-					<div class="addOnTile">
-						<div class="addOnTitle">
+					<div class="attractionTile">
+						<div class="attractionTitle">
 							Legoland California
 							<img src="img/attractionLogos/soCal/legoland_bw.png" alt="Legoland">
 						</div>
-						<div class="addOnSubTitle">
+						<div class="attractionSubTitle">
 							Add a one-time admission to LEGOLAND California</span>
 						</div>
 						<div class="ageGroup">
@@ -278,7 +330,7 @@
 								<div style="clear:both;"></div>
 							</div>
 						</div>
-						<div class="addOnNav">
+						<div class="attractionNav">
 							<a href="">Upgrade button</a>
 							<a href="">Details</a>
 						</div>

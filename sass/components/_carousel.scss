@@ -1,6 +1,5 @@
 .carousel{
 	.carouselPadding{
-		margin:0 5px 0 0;
 		.heroWrapper{
 			background-size:cover;
 			.carouselMessage{
@@ -18,24 +17,9 @@
 			&:hover{background:$black;}
 		}
 		.active{background:$black;}
-	}
-	.attractionListWrap{margin:5px 10px 10px 10px;}
-	.attractionList{
-		.attractionTile{
-			@include rounded(2px);
-			border:1px solid $gray-light;background-color:$gray-lightest;float:left;
-			&:hover{border:1px solid $blue;background-color:$gray-lighter;}
-			img{opacity:0.8;vertical-align:middle;float:left;}
-			.attractionName{margin-left:65px;padding:6px 0 0 0;}
-			.attractionNameSub{display:block;color:$gray-dark;}
-			a{
-				color:$gray-dark;
-				&:hover{color:$blue;text-decoration:none;}
-			}
-		}
-		.cpTile{
-			border-top:1px solid $red;
-			a{color:$red;}
+		#allAttractions{
+			float:right;margin:0 10px 0 0;color:$gray-medium;
+			&:hover{text-decoration:none;color:$black2;}
 		}
 	}
 }
@@ -43,26 +27,13 @@
 
 @include screen(320px, 479px){
 	.carousel{
-		margin:0 0 10px 0;
+		margin:0 0 12px 0;
 		.carouselPadding{
 			margin:0;
 			.heroWrapper{height:200px;}
 		}
-		.attractionList{
-			font-size:14px;font-weight:normal;
-			.attractionTile{
-				width:45%;height:35px;margin:2px 6px;
-				img{display:none;}
-				.attractionName{margin-left:0;padding:4px 0 0 0;text-align:center;}
-				.attractionNameSub{display:none;}
-			}
-			.carouselActive{
-				border-bottom:1px solid $red;
-			}
-			.cpTile{
-				width:100%;font-size:14px;margin:2px 0;
-				.attractionNameSub{font-size:12px;font-weight:normal;color:$gray-medium;display:block;}
-			}
+		.carouselNav{
+			#allAttractions{font-size:13px;}
 		}
 	}
 }

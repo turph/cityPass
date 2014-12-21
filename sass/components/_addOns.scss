@@ -1,20 +1,23 @@
-.addOnList{
-	float:left;padding:10px 0 0 0;width:100%;background-color:$teal50;@include box-shadow(0, 2px, 5px, rgba(0, 0, 0, 0.35), inset);
+.attractionList{
+	float:left;padding:10px 0 0 0;width:100%;@include box-shadow(0, 2px, 5px, rgba(0, 0, 0, 0.35), inset);
   overflow: scroll;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
-	.addOnWrapper{
+	.attractionWrapper{
 		width:10000px;
-		.addOnTile{
-			padding:10px;
-			float:left;border:1px solid $teal200;@include rounded(3px);background-color:$white;
-			.addOnTitle, .addOnSubTitle, .addOnSubTitleCity{text-align:center;}
-			.addOnTitle{
-				color:$teal600;font-weight:bold;
+		.attractionTile{
+			padding:10px;min-height:240px;
+			float:left;@include rounded(3px);background-color:$white;
+			.attractionTitle, .attractionSubTitle, .attractionSubTitleCity{text-align:center;}
+			.attractionTitle{
+				font-weight:bold;
 				img{width:80%;}
 			}
-			.addOnSubTitle{display:block;color:$gray-medium;font-weight:normal;}
-			.addOnSubTitleCity{display:block;color:$gray-dark;}
+			.attractionSubTitle{
+				display:block;color:$gray-dark;font-weight:bold;text-align:left;
+				.attractionCopy{color:$gray-medium;font-weight:normal;display:block;}
+			}
+			.attractionSubTitleCity{display:block;color:$gray-dark;}
 			.ageGroup{
 				border-bottom:1px solid $gray-light;display:table;width:100%;
 				.ageGroupLineItem{margin:0 10px;display:table-row;}
@@ -24,30 +27,48 @@
 				.save{margin:0 0 0 5px;display:block;font-weight:normal;}
 				.price{margin:0 0 0 15px;}
 			}
-			.addOnNav{
+			.attractionNav{
 				margin:10px 0 0 0;
 			}
 		}
 	}
 }
+.includedAtt{
+	background-color:$blue50;
+	.attractionTile{
+		border:1px solid $blue200;
+		.attractionTitle{color:$blue900;}
+	}
+}
+.addOnAtt{
+	background-color:$teal50;
+	.attractionTile{
+		border:1px solid $teal200;
+		.attractionTitle{color:$teal600;}
+	}
+}
 
 @include screen(320px, 479px)
 {
-	.addOnList{
-		.addOnWrapper{
-			.addOnTile{
+	.attractionList{
+		.attractionWrapper{
+			.attractionTile{
 				width:220px;margin:0 0 10px 10px;
-				.addOnTitle, .addOnSubTitle, .addOnSubTitleCity{font-size:14px;}
-				.addOnTitle{
+				.attractionTitle, .attractionSubTitle, .attractionSubTitleCity{font-size:14px;}
+				.attractionTitle{
 					img{margin:10px 0 5px 0;}
 				}
-				.addOnSubTitle{margin:5px 5px 10px 5px;line-height:18px;}
-				.addOnSubTitleCity{margin:0 0 3px 0;}
+				.attractionSubTitle{margin:5px 5px 10px 5px;line-height:18px;}
+				.attractionSubTitleCity{margin:0 0 3px 0;}
 				.ageGroup{
 					.price{font-weight:normal;font-size:18px;}
 				}
 			}
 		}
+	}
+	#includedAttractionList{
+		margin:0 0 20px 0;
+		.sectionTitle{margin-top:10px;}
 	}
 }
 @include min-screen(480px)

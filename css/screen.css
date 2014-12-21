@@ -373,7 +373,7 @@ blockquote {
         font-weight: bold;
         color: #404040; }
       .buyBox .buyBoxPadding .ageGroup .ageGroupDiscount {
-        margin: 0 0 0 5px;
+        margin: 2px 0 0 5px;
         color: #878787;
         font-weight: normal; }
         .buyBox .buyBoxPadding .ageGroup .ageGroupDiscount .discount {
@@ -523,23 +523,21 @@ blockquote {
 
   .priceLabel, .discount {
     font-size: 12px; } }
-.carousel .carouselPadding {
-  margin: 0 5px 0 0; }
-  .carousel .carouselPadding .heroWrapper {
-    background-size: cover; }
-    .carousel .carouselPadding .heroWrapper .carouselMessage {
-      background: rgba(225, 225, 225, 0.7);
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      color: #404040;
-      text-shadow: 1px 1px 1px rgba(225, 225, 225, 0.35); }
-      .carousel .carouselPadding .heroWrapper .carouselMessage .carouselTitle {
-        padding: 10px;
-        font-weight: normal; }
-      .carousel .carouselPadding .heroWrapper .carouselMessage .location {
-        display: block;
-        font-weight: bold; }
+.carousel .carouselPadding .heroWrapper {
+  background-size: cover; }
+  .carousel .carouselPadding .heroWrapper .carouselMessage {
+    background: rgba(225, 225, 225, 0.7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #404040;
+    text-shadow: 1px 1px 1px rgba(225, 225, 225, 0.35); }
+    .carousel .carouselPadding .heroWrapper .carouselMessage .carouselTitle {
+      padding: 10px;
+      font-weight: normal; }
+    .carousel .carouselPadding .heroWrapper .carouselMessage .location {
+      display: block;
+      font-weight: bold; }
 .carousel .carouselNav {
   margin: 5px 0 0 0;
   text-align: center; }
@@ -557,71 +555,23 @@ blockquote {
       background: #000; }
   .carousel .carouselNav .active {
     background: #000; }
-.carousel .attractionListWrap {
-  margin: 5px 10px 10px 10px; }
-.carousel .attractionList .attractionTile {
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border: 1px solid #ededed;
-  background-color: #fafafa;
-  float: left; }
-  .carousel .attractionList .attractionTile:hover {
-    border: 1px solid #3c8bd3;
-    background-color: whitesmoke; }
-  .carousel .attractionList .attractionTile img {
-    opacity: 0.8;
-    vertical-align: middle;
-    float: left; }
-  .carousel .attractionList .attractionTile .attractionName {
-    margin-left: 65px;
-    padding: 6px 0 0 0; }
-  .carousel .attractionList .attractionTile .attractionNameSub {
-    display: block;
-    color: #666666; }
-  .carousel .attractionList .attractionTile a {
-    color: #666666; }
-    .carousel .attractionList .attractionTile a:hover {
-      color: #3c8bd3;
-      text-decoration: none; }
-.carousel .attractionList .cpTile {
-  border-top: 1px solid #CF534D; }
-  .carousel .attractionList .cpTile a {
-    color: #CF534D; }
+  .carousel .carouselNav #allAttractions {
+    float: right;
+    margin: 0 10px 0 0;
+    color: #878787; }
+    .carousel .carouselNav #allAttractions:hover {
+      text-decoration: none;
+      color: #404040; }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .carousel {
-    margin: 0 0 10px 0; }
+    margin: 0 0 12px 0; }
     .carousel .carouselPadding {
       margin: 0; }
       .carousel .carouselPadding .heroWrapper {
         height: 200px; }
-    .carousel .attractionList {
-      font-size: 14px;
-      font-weight: normal; }
-      .carousel .attractionList .attractionTile {
-        width: 45%;
-        height: 35px;
-        margin: 2px 6px; }
-        .carousel .attractionList .attractionTile img {
-          display: none; }
-        .carousel .attractionList .attractionTile .attractionName {
-          margin-left: 0;
-          padding: 4px 0 0 0;
-          text-align: center; }
-        .carousel .attractionList .attractionTile .attractionNameSub {
-          display: none; }
-      .carousel .attractionList .carouselActive {
-        border-bottom: 1px solid #CF534D; }
-      .carousel .attractionList .cpTile {
-        width: 100%;
-        font-size: 14px;
-        margin: 2px 0; }
-        .carousel .attractionList .cpTile .attractionNameSub {
-          font-size: 12px;
-          font-weight: normal;
-          color: #878787;
-          display: block; } }
+    .carousel .carouselNav #allAttractions {
+      font-size: 13px; } }
 @media screen and (min-width: 480px) {
   .carousel .attractionList {
     font-size: 12px;
@@ -738,81 +688,103 @@ blockquote {
       .carousel .attractionList .cpTile .attractionNameSub {
         display: block;
         font-size: 12px; } }
-.addOnList {
+.attractionList {
   float: left;
   padding: 10px 0 0 0;
   width: 100%;
-  background-color: #E0F2F1;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
   overflow: scroll;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch; }
-  .addOnList .addOnWrapper {
+  .attractionList .attractionWrapper {
     width: 10000px; }
-    .addOnList .addOnWrapper .addOnTile {
+    .attractionList .attractionWrapper .attractionTile {
       padding: 10px;
+      min-height: 240px;
       float: left;
-      border: 1px solid #80CBC4;
       border-radius: 3px;
       -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
       background-color: #fff; }
-      .addOnList .addOnWrapper .addOnTile .addOnTitle, .addOnList .addOnWrapper .addOnTile .addOnSubTitle, .addOnList .addOnWrapper .addOnTile .addOnSubTitleCity {
+      .attractionList .attractionWrapper .attractionTile .attractionTitle, .attractionList .attractionWrapper .attractionTile .attractionSubTitle, .attractionList .attractionWrapper .attractionTile .attractionSubTitleCity {
         text-align: center; }
-      .addOnList .addOnWrapper .addOnTile .addOnTitle {
-        color: #00897B;
+      .attractionList .attractionWrapper .attractionTile .attractionTitle {
         font-weight: bold; }
-        .addOnList .addOnWrapper .addOnTile .addOnTitle img {
+        .attractionList .attractionWrapper .attractionTile .attractionTitle img {
           width: 80%; }
-      .addOnList .addOnWrapper .addOnTile .addOnSubTitle {
+      .attractionList .attractionWrapper .attractionTile .attractionSubTitle {
         display: block;
-        color: #878787;
-        font-weight: normal; }
-      .addOnList .addOnWrapper .addOnTile .addOnSubTitleCity {
+        color: #666666;
+        font-weight: bold;
+        text-align: left; }
+        .attractionList .attractionWrapper .attractionTile .attractionSubTitle .attractionCopy {
+          color: #878787;
+          font-weight: normal;
+          display: block; }
+      .attractionList .attractionWrapper .attractionTile .attractionSubTitleCity {
         display: block;
         color: #666666; }
-      .addOnList .addOnWrapper .addOnTile .ageGroup {
+      .attractionList .attractionWrapper .attractionTile .ageGroup {
         border-bottom: 1px solid #ededed;
         display: table;
         width: 100%; }
-        .addOnList .addOnWrapper .addOnTile .ageGroup .ageGroupLineItem {
+        .attractionList .attractionWrapper .attractionTile .ageGroup .ageGroupLineItem {
           margin: 0 10px;
           display: table-row; }
-        .addOnList .addOnWrapper .addOnTile .ageGroup .age, .addOnList .addOnWrapper .addOnTile .ageGroup .price, .addOnList .addOnWrapper .addOnTile .ageGroup .quantity {
+        .attractionList .attractionWrapper .attractionTile .ageGroup .age, .attractionList .attractionWrapper .attractionTile .ageGroup .price, .attractionList .attractionWrapper .attractionTile .ageGroup .quantity {
           display: table-cell;
           vertical-align: bottom; }
-        .addOnList .addOnWrapper .addOnTile .ageGroup .price, .addOnList .addOnWrapper .addOnTile .ageGroup .quantity {
+        .attractionList .attractionWrapper .attractionTile .ageGroup .price, .attractionList .attractionWrapper .attractionTile .ageGroup .quantity {
           text-align: right; }
-        .addOnList .addOnWrapper .addOnTile .ageGroup .age {
+        .attractionList .attractionWrapper .attractionTile .ageGroup .age {
           font-weight: normal;
           color: #878787; }
-        .addOnList .addOnWrapper .addOnTile .ageGroup .save {
+        .attractionList .attractionWrapper .attractionTile .ageGroup .save {
           margin: 0 0 0 5px;
           display: block;
           font-weight: normal; }
-        .addOnList .addOnWrapper .addOnTile .ageGroup .price {
+        .attractionList .attractionWrapper .attractionTile .ageGroup .price {
           margin: 0 0 0 15px; }
-      .addOnList .addOnWrapper .addOnTile .addOnNav {
+      .attractionList .attractionWrapper .attractionTile .attractionNav {
         margin: 10px 0 0 0; }
 
+.includedAtt {
+  background-color: #E3F2FD; }
+  .includedAtt .attractionTile {
+    border: 1px solid #90CAF9; }
+    .includedAtt .attractionTile .attractionTitle {
+      color: #0D47A1; }
+
+.addOnAtt {
+  background-color: #E0F2F1; }
+  .addOnAtt .attractionTile {
+    border: 1px solid #80CBC4; }
+    .addOnAtt .attractionTile .attractionTitle {
+      color: #00897B; }
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .addOnList .addOnWrapper .addOnTile {
+  .attractionList .attractionWrapper .attractionTile {
     width: 220px;
     margin: 0 0 10px 10px; }
-    .addOnList .addOnWrapper .addOnTile .addOnTitle, .addOnList .addOnWrapper .addOnTile .addOnSubTitle, .addOnList .addOnWrapper .addOnTile .addOnSubTitleCity {
+    .attractionList .attractionWrapper .attractionTile .attractionTitle, .attractionList .attractionWrapper .attractionTile .attractionSubTitle, .attractionList .attractionWrapper .attractionTile .attractionSubTitleCity {
       font-size: 14px; }
-    .addOnList .addOnWrapper .addOnTile .addOnTitle img {
+    .attractionList .attractionWrapper .attractionTile .attractionTitle img {
       margin: 10px 0 5px 0; }
-    .addOnList .addOnWrapper .addOnTile .addOnSubTitle {
+    .attractionList .attractionWrapper .attractionTile .attractionSubTitle {
       margin: 5px 5px 10px 5px;
       line-height: 18px; }
-    .addOnList .addOnWrapper .addOnTile .addOnSubTitleCity {
+    .attractionList .attractionWrapper .attractionTile .attractionSubTitleCity {
       margin: 0 0 3px 0; }
-    .addOnList .addOnWrapper .addOnTile .ageGroup .price {
+    .attractionList .attractionWrapper .attractionTile .ageGroup .price {
       font-weight: normal;
-      font-size: 18px; } }
+      font-size: 18px; }
+
+  #includedAttractionList {
+    margin: 0 0 20px 0; }
+    #includedAttractionList .sectionTitle {
+      margin-top: 10px; } }
 .featureList {
   float: left;
   width: 100%;
