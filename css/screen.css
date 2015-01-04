@@ -523,171 +523,54 @@ blockquote {
 
   .priceLabel, .discount {
     font-size: 12px; } }
-.carousel .carouselPadding .heroWrapper {
-  background-size: cover; }
-  .carousel .carouselPadding .heroWrapper .carouselMessage {
-    background: rgba(225, 225, 225, 0.7);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: #404040;
-    text-shadow: 1px 1px 1px rgba(225, 225, 225, 0.35); }
-    .carousel .carouselPadding .heroWrapper .carouselMessage .carouselTitle {
-      padding: 10px;
-      font-weight: normal; }
-    .carousel .carouselPadding .heroWrapper .carouselMessage .location {
-      display: block;
-      font-weight: bold; }
-.carousel .carouselNav {
-  margin: 5px 0 0 0;
-  text-align: center; }
-  .carousel .carouselNav a {
-    display: inline-block;
-    margin: 0 3px; }
-  .carousel .carouselNav div {
-    width: 10px;
-    height: 10px;
+.slidesjs-previous, .slidesjs-next {
+  display: none; }
+
+.slidesjs-control img {
+  width: 100%; }
+.slidesjs-control .carouselMessage {
+  background: rgba(225, 225, 225, 0.7);
+  position: absolute;
+  bottom: 20;
+  width: 100%;
+  color: #404040;
+  text-shadow: 1px 1px 1px rgba(225, 225, 225, 0.35); }
+  .slidesjs-control .carouselMessage .carouselTitle {
+    padding: 10px;
+    font-weight: normal; }
+  .slidesjs-control .carouselMessage .location {
+    display: block;
+    font-weight: bold; }
+
+.slidesjs-pagination {
+  margin: 12px 0 0 10px; }
+  .slidesjs-pagination li a {
+    display: block;
+    float: left;
+    margin: 0 7px 0 0;
+    width: 11px;
+    height: 11px;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: #878787; }
-    .carousel .carouselNav div:hover {
+    .slidesjs-pagination li a:hover {
       background: #000; }
-  .carousel .carouselNav .active {
-    background: #000; }
-  .carousel .carouselNav #allAttractions {
-    float: right;
-    margin: 0 10px 0 0;
+  .slidesjs-pagination a.active {
+    background: #404040; }
+
+.carousel .carouselNav {
+  float: right;
+  margin: -13px 5px 0 0;
+  height: 30px; }
+  .carousel .carouselNav a {
     color: #878787; }
-    .carousel .carouselNav #allAttractions:hover {
-      text-decoration: none;
-      color: #404040; }
+    .carousel .carouselNav a:hover {
+      text-decoration: none; }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .carousel {
-    margin: 0 0 12px 0; }
-    .carousel .carouselPadding {
-      margin: 0; }
-      .carousel .carouselPadding .heroWrapper {
-        height: 200px; }
-    .carousel .carouselNav #allAttractions {
-      font-size: 13px; } }
-@media screen and (min-width: 480px) {
-  .carousel .attractionList {
-    font-size: 12px;
-    font-weight: bold; }
-    .carousel .attractionList .attractionTile {
-      width: 95%;
-      height: 45px;
-      margin: 2px 6px; }
-      .carousel .attractionList .attractionTile img {
-        padding: 10px 0 0 2px;
-        width: 60px; }
-      .carousel .attractionList .attractionTile .attractionName {
-        margin-left: 65px;
-        padding: 8px 0 0 0; }
-      .carousel .attractionList .attractionTile .attractionNameSub {
-        font-size: 12px;
-        font-weight: normal;
-        color: #878787; }
-    .carousel .attractionList .carouselActive {
-      border-left: 1px solid #CF534D; }
-    .carousel .attractionList .cpTile {
-      width: 100%;
-      font-size: 14px;
-      margin: 2px 0; } }
-@media screen and (min-width: 768px) {
-  .carousel .carouselPadding .heroWrapper .carouselMessage {
-    font-size: 18px; }
-    .carousel .carouselPadding .heroWrapper .carouselMessage .location {
-      font-size: 20px; }
-  .carousel .carouselPadding .attractionSummary {
-    margin: 7px; }
-    .carousel .carouselPadding .attractionSummary img {
-      height: 50px; }
-    .carousel .carouselPadding .attractionSummary .pitch {
-      margin-left: 143px; }
-  .carousel .attractionList {
-    font-size: 14px;
-    font-weight: bold; }
-    .carousel .attractionList .attractionTile {
-      width: 22%;
-      height: 120px;
-      margin: 2px 6px;
-      text-align: center; }
-      .carousel .attractionList .attractionTile img {
-        padding: 10px 0 0 2px;
-        width: 70%;
-        float: none; }
-      .carousel .attractionList .attractionTile .attractionName {
-        margin: 0;
-        padding: 8px 0 0 0; }
-      .carousel .attractionList .attractionTile .attractionNameSub {
-        display: none; }
-    .carousel .attractionList .carouselActive {
-      border-left: 1px solid #CF534D; }
-    .carousel .attractionList .cpTile {
-      width: 100%;
-      font-size: 18px;
-      margin: 2px 0;
-      height: 50px; }
-      .carousel .attractionList .cpTile img {
-        width: 100px;
-        float: left;
-        padding: 6px 0 0 2px; }
-      .carousel .attractionList .cpTile .attractionNameSub {
-        display: block;
-        font-size: 14px; } }
-@media screen and (min-width: 1024px) {
-  .carousel .carouselPadding .heroWrapper .carouselMessage {
-    font-size: 20px; }
-    .carousel .carouselPadding .heroWrapper .carouselMessage .location {
-      font-size: 24px; }
-  .carousel .carouselPadding .attractionSummary {
-    margin: 10px; }
-    .carousel .carouselPadding .attractionSummary img {
-      height: 60px; }
-    .carousel .carouselPadding .attractionSummary .pitch {
-      margin-left: 170px; }
-  .carousel .attractionListWrap {
-    margin: 5px 10px 10px 10px;
-    float: left; }
-  .carousel .attractionList {
-    font-size: 14px;
-    font-weight: bold;
-    width: 25%; }
-    .carousel .attractionList .attractionTile {
-      width: 95%;
-      height: 50px;
-      margin: 2px 6px;
-      padding: 0 6px 0 0;
-      text-align: left; }
-      .carousel .attractionList .attractionTile img {
-        padding: 10px 0 0 2px;
-        width: 70px;
-        float: left; }
-      .carousel .attractionList .attractionTile .attractionName {
-        margin-left: 80px;
-        padding: 8px 0 0 0; }
-      .carousel .attractionList .attractionTile .attractionNameSub {
-        font-size: 12px;
-        font-weight: normal;
-        color: #878787;
-        display: block; }
-    .carousel .attractionList .carouselActive {
-      border-left: 1px solid #CF534D; }
-    .carousel .attractionList .cpTile {
-      width: 100%;
-      font-size: 18px;
-      margin: 2px 0;
-      height: 50px; }
-      .carousel .attractionList .cpTile img {
-        width: 70px;
-        float: left;
-        padding: 6px 0 0 2px; }
-      .carousel .attractionList .cpTile .attractionNameSub {
-        display: block;
-        font-size: 12px; } }
+  .carouselNav a {
+    font-size: 13px; } }
 .attractionList {
   float: left;
   padding: 10px 0 0 0;

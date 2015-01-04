@@ -5,7 +5,23 @@
 		<title></title>
 		<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="js/jquery.slides.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+<style>
+  /* Prevents slides from flashing */
+  #slides {
+    display:none;
+  }
+</style>
+
+  <script>
+    $(function(){
+      $("#slides").slidesjs({
+        width: 940,
+        height: 500
+      });
+    });
+  </script>
 <script>
 	$(document).ready (function () {
 		$('#carouselNav0').click (function () {
@@ -107,45 +123,45 @@
 				<a id="navAttraction" href="">Disneyland Resort & Disney California Adventure</a>
 			</div>
 			<div class="carousel">
-				<div class="carouselPadding">
-					<div id="carousel0" class="heroWrapper" style="background-image:url('http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/00-soCal.jpg')">
+				<div id="slides">
+					<div><!-- Panel 0 -->
+						<img src="http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/00-soCal.jpg">
 						<div class="carouselMessage">
 							<div class="carouselTitle">
 								<span class="location">4 Attractions | Save $112 or more</span>Southern California's best attractions</div>
 						</div>
 					</div>
-					<div id="carousel1" class="heroWrapper" style="background-image:url('http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/01-soCal.jpg'); display:none;">
+					<div><!-- Panel 1 -->
+						<img src="http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/01-soCal.jpg">
 						<div class="carouselMessage">
 							<div class="carouselTitle">
 								<span class="location">Disneyland Resort</span>Fill your day with wonder and imagination</div>
 						</div>
 					</div>
-					<div id="carousel2" class="heroWrapper" style="background-image:url('http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/02-soCal.jpg'); display:none;">
+					<div><!-- Panel 2 -->
+						<img src="http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/02-soCal.jpg">
 						<div class="carouselMessage">
 							<div class="carouselTitle">
 								<span class="location">Universal Studios Hollywood</span>The ultimate movie experience</div>
 						</div>
 					</div>
-					<div id="carousel3" class="heroWrapper" style="background-image:url('http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/03-soCal.jpg'); display:none;">
+					<div><!-- Panel 3 -->
+						<img src="http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/03-soCal.jpg">
 						<div class="carouselMessage">
 							<div class="carouselTitle">
 								<span class="location">Disney California Adventure</span>Immerse in Disney & Pixar Stories</div>
 						</div>
 					</div>
-					<div id="carousel4" class="heroWrapper" style="background-image:url('http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/04-soCal.jpg'); display:none;">
+					<div><!-- Panel 4 -->
+						<img src="http://turph.s3.amazonaws.com/Freelance/cityPass/img/carouselImgs/soCal/04-soCal.jpg">
 						<div class="carouselMessage">
 							<div class="carouselTitle">
-								<span class="location">SeaWorld San Diego</span>Connect with the sea like never before</div>
+								<span class="location">Disney California Adventure</span>Immerse in Disney & Pixar Stories</div>
 						</div>
 					</div>
-					<div class="carouselNav">
-						<a id="carouselNav0" href="" title="CityPass Southern California"><div class="active"></div></a>
-						<a id="carouselNav1" href="" title="Disneyland Resort"><div></div></a>
-						<a id="carouselNav2" href="" title="Universal Studios Hollywood"><div></div></a>
-						<a id="carouselNav3" href="" title="Disney California Adventure"><div></div></a>
-						<a id="carouselNav4" href="" title="SeaWorld San Diego"><div></div></a>
-						<a id="allAttractions" href="" title="View All Attractions">4 Attractions &or;</a>
-					</div>
+				</div>
+				<div class="carouselNav">
+					<a id="allAttractions" href="" title="View All Attractions">4 Attractions &or;</a>
 				</div>
 			</div>
 			<section id="includedAttractionList" style="display:none;"><!-- Included Attractions -->

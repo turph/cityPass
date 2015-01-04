@@ -1004,17 +1004,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/attractionLogos\/sanDiego.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 9660,
-		"inputAbbreviatedPath": "\/img\/attractionLogos\/sanDiego.jpg",
-		"outputAbbreviatedPath": "\/img\/attractionLogos\/sanDiego.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/attractionLogos\/seaWorld.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1044,6 +1033,39 @@
 		"initialSize": 7529,
 		"inputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/cpLogo-soCal.png",
 		"outputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/cpLogo-soCal.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/attractionLogos\/soCal\/legoland.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12975,
+		"inputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/legoland.png",
+		"outputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/legoland.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/attractionLogos\/soCal\/legoland_bw.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12727,
+		"inputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/legoland_bw.png",
+		"outputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/legoland_bw.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/attractionLogos\/soCal\/sanDiego.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9660,
+		"inputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/sanDiego.jpg",
+		"outputAbbreviatedPath": "\/img\/attractionLogos\/soCal\/sanDiego.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1168,6 +1190,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/js\/jquery.slides.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/jquery.slides.js",
+		"outputAbbreviatedPath": "\/js\/min\/jquery.slides-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/jquery.slides.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/jquery.slides.min.js",
+		"outputAbbreviatedPath": "\/js\/min\/jquery.slides.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/jquery.slides-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/jquery.slides-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/jquery.slides-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/sass\/base\/_alerts.scss": {
 		"createSourceMap": 0,
@@ -1322,6 +1377,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/components\/_header.scss",
 		"outputAbbreviatedPath": "\/css\/_header.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/components\/_slidesjs.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/components\/_slidesjs.scss",
+		"outputAbbreviatedPath": "\/css\/_slidesjs.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

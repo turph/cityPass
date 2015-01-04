@@ -1,0 +1,41 @@
+.slidesjs-previous, .slidesjs-next{display:none;}
+.slidesjs-control{
+	img{width:100%;}
+	.carouselMessage{
+		background:rgba(225,225,225,0.7);position:absolute;bottom:20;width:100%;color:$black2;text-shadow:1px 1px 1px rgba(225,225,225,0.35);
+		.carouselTitle{padding:10px;font-weight:normal;}
+		.location{display:block;font-weight:bold;}
+	}
+}
+.slidesjs-pagination{
+	margin:12px 0 0 10px;
+	li{
+		a{
+			display:block;float:left;margin:0 7px 0 0;
+			@include cirle(11px, 11px, $gray-medium);
+			&:hover{background:$black;}
+		}
+	}
+	a.active{background:$black2;}
+}
+.carousel{
+	.carouselNav{
+		float:right;margin:-13px 5px 0 0;height:30px;
+		a{
+			color:$gray-medium;
+			&:hover{text-decoration:none;}
+		}
+	}
+}
+
+@include screen(320px, 479px){
+	.carouselNav{
+		a{font-size:13px;}
+	}
+}
+@include min-screen(480px){
+}
+@include min-screen(768px){
+}
+@include min-screen(1024px){
+}
