@@ -583,84 +583,90 @@ blockquote {
   -webkit-overflow-scrolling: touch; }
   .attractionList .attractionWrapper {
     width: 10000px; }
-    .attractionList .attractionWrapper .attractionTile {
-      padding: 10px;
-      min-height: 240px;
-      float: left;
-      border-radius: 3px;
-      -moz-border-radius: 3px;
-      -webkit-border-radius: 3px;
-      background-color: #fff; }
-      .attractionList .attractionWrapper .attractionTile .attractionTitle, .attractionList .attractionWrapper .attractionTile .attractionSubTitle, .attractionList .attractionWrapper .attractionTile .attractionSubTitleCity {
-        text-align: center; }
-      .attractionList .attractionWrapper .attractionTile .attractionTitle {
-        font-weight: bold; }
-        .attractionList .attractionWrapper .attractionTile .attractionTitle img {
-          width: 80%; }
-      .attractionList .attractionWrapper .attractionTile .attractionSubTitle {
-        display: block;
-        color: #666666;
-        font-weight: bold;
-        text-align: left; }
-        .attractionList .attractionWrapper .attractionTile .attractionSubTitle .attractionCopy {
-          color: #878787;
-          font-weight: normal;
-          display: block; }
-      .attractionList .attractionWrapper .attractionTile .attractionSubTitleCity {
-        display: block;
-        color: #666666; }
-      .attractionList .attractionWrapper .attractionTile .ageGroup {
-        border-bottom: 1px solid #ededed;
-        display: table;
-        width: 100%; }
-        .attractionList .attractionWrapper .attractionTile .ageGroup .ageGroupLineItem {
-          margin: 0 10px;
-          display: table-row; }
-        .attractionList .attractionWrapper .attractionTile .ageGroup .age, .attractionList .attractionWrapper .attractionTile .ageGroup .price, .attractionList .attractionWrapper .attractionTile .ageGroup .quantity {
-          display: table-cell;
-          vertical-align: bottom; }
-        .attractionList .attractionWrapper .attractionTile .ageGroup .price, .attractionList .attractionWrapper .attractionTile .ageGroup .quantity {
-          text-align: right; }
-        .attractionList .attractionWrapper .attractionTile .ageGroup .age {
-          font-weight: normal;
-          color: #878787; }
-        .attractionList .attractionWrapper .attractionTile .ageGroup .save {
-          margin: 0 0 0 5px;
-          display: block;
-          font-weight: normal; }
-        .attractionList .attractionWrapper .attractionTile .ageGroup .price {
-          margin: 0 0 0 15px; }
-      .attractionList .attractionWrapper .attractionTile .attractionNav {
-        margin: 10px 0 0 0; }
+  .attractionList .attractionTileWrap {
+    float: left;
+    margin: 10px; }
+  .attractionList .attractionTile {
+    position: relative;
+    min-height: 320px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #fff; }
+  .attractionList .attractionTitle, .attractionList .attractionSubTitle {
+    text-align: center;
+    padding: 8px 0; }
+  .attractionList .attractionTitle {
+    font-weight: bold; }
+    .attractionList .attractionTitle img {
+      width: 80%; }
+  .attractionList .ageGroup {
+    border-bottom: 1px solid #ededed;
+    display: table;
+    width: 100%; }
+    .attractionList .ageGroup .ageGroupLineItem {
+      margin: 0 10px;
+      display: table-row; }
+    .attractionList .ageGroup .age, .attractionList .ageGroup .price, .attractionList .ageGroup .quantity {
+      display: table-cell;
+      vertical-align: bottom; }
+    .attractionList .ageGroup .price, .attractionList .ageGroup .quantity {
+      text-align: right; }
+    .attractionList .ageGroup .age {
+      font-weight: normal;
+      color: #878787; }
+    .attractionList .ageGroup .save {
+      margin: 0 0 0 5px;
+      display: block;
+      font-weight: normal; }
+    .attractionList .ageGroup .price {
+      margin: 0 0 0 15px; }
+  .attractionList .attractionNav {
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0 0 0; }
 
 .includedAtt {
-  background-color: #E3F2FD; }
+  background-color: #E0F7FA; }
   .includedAtt .attractionTile {
-    border: 1px solid #90CAF9; }
-    .includedAtt .attractionTile .attractionTitle {
-      color: #0D47A1; }
+    border: 1px solid #ededed;
+    background-size: contain;
+    background: center center no-repeat; }
+  .includedAtt .attractionSubTitle {
+    background: rgba(225, 225, 225, 0.8);
+    width: 100%;
+    color: #000;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(225, 225, 225, 0.35);
+    position: absolute;
+    bottom: 0; }
+  .includedAtt .attractionCopy {
+    color: #404040;
+    font-weight: normal;
+    display: block; }
 
 .addOnAtt {
   background-color: #E0F2F1; }
   .addOnAtt .attractionTile {
-    border: 1px solid #80CBC4; }
-    .addOnAtt .attractionTile .attractionTitle {
-      color: #00897B; }
+    border: 1px solid #80CBC4;
+    padding: 5px; }
+  .addOnAtt .attractionTitle {
+    color: #00897B; }
+  .addOnAtt .attractionSubTitle {
+    color: #878787; }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .attractionList .attractionWrapper .attractionTile {
-    width: 220px;
-    margin: 0 0 10px 10px; }
-    .attractionList .attractionWrapper .attractionTile .attractionTitle, .attractionList .attractionWrapper .attractionTile .attractionSubTitle, .attractionList .attractionWrapper .attractionTile .attractionSubTitleCity {
+  .attractionTile {
+    width: 220px; }
+    .attractionTile .attractionTitle, .attractionTile .attractionSubTitle, .attractionTile .attractionSubTitleCity {
       font-size: 14px; }
-    .attractionList .attractionWrapper .attractionTile .attractionTitle img {
+    .attractionTile .attractionTitle img {
       margin: 10px 0 5px 0; }
-    .attractionList .attractionWrapper .attractionTile .attractionSubTitle {
-      margin: 5px 5px 10px 5px;
+    .attractionTile .attractionSubTitle {
       line-height: 18px; }
-    .attractionList .attractionWrapper .attractionTile .attractionSubTitleCity {
+    .attractionTile .attractionSubTitleCity {
       margin: 0 0 3px 0; }
-    .attractionList .attractionWrapper .attractionTile .ageGroup .price {
+    .attractionTile .ageGroup .price {
       font-weight: normal;
       font-size: 18px; }
 

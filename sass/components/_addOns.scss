@@ -3,67 +3,56 @@
   overflow: scroll;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
-	.attractionWrapper{
-		width:10000px;
-		.attractionTile{
-			padding:10px;min-height:240px;
-			float:left;@include rounded(3px);background-color:$white;
-			.attractionTitle, .attractionSubTitle, .attractionSubTitleCity{text-align:center;}
-			.attractionTitle{
-				font-weight:bold;
-				img{width:80%;}
-			}
-			.attractionSubTitle{
-				display:block;color:$gray-dark;font-weight:bold;text-align:left;
-				.attractionCopy{color:$gray-medium;font-weight:normal;display:block;}
-			}
-			.attractionSubTitleCity{display:block;color:$gray-dark;}
-			.ageGroup{
-				border-bottom:1px solid $gray-light;display:table;width:100%;
-				.ageGroupLineItem{margin:0 10px;display:table-row;}
-				.age, .price, .quantity{display:table-cell;vertical-align:bottom;}
-				.price, .quantity{text-align:right;}
-				.age{font-weight:normal;color:$gray-medium;}
-				.save{margin:0 0 0 5px;display:block;font-weight:normal;}
-				.price{margin:0 0 0 15px;}
-			}
-			.attractionNav{
-				margin:10px 0 0 0;
-			}
-		}
+	.attractionWrapper{width:10000px;}
+	.attractionTileWrap{float:left;margin:10px;}
+	.attractionTile{
+		position:relative;min-height:320px;
+		@include rounded(3px);background-color:$white;
+	}
+	.attractionTitle, .attractionSubTitle{text-align:center;padding:8px 0;}
+	.attractionTitle{
+		font-weight:bold;
+		img{width:80%;}
+	}
+	.ageGroup{
+		border-bottom:1px solid $gray-light;display:table;width:100%;
+		.ageGroupLineItem{margin:0 10px;display:table-row;}
+		.age, .price, .quantity{display:table-cell;vertical-align:bottom;}
+		.price, .quantity{text-align:right;}
+		.age{font-weight:normal;color:$gray-medium;}
+		.save{margin:0 0 0 5px;display:block;font-weight:normal;}
+		.price{margin:0 0 0 15px;}
+	}
+	.attractionNav{
+		position:absolute;bottom:0;
+		margin:10px 0 0 0;
 	}
 }
 .includedAtt{
-	background-color:$blue50;
-	.attractionTile{
-		border:1px solid $blue200;
-		.attractionTitle{color:$blue900;}
-	}
+	background-color:$cyan50;
+	.attractionTile{border:1px solid $gray-light;background-size:contain;background:center center no-repeat;}
+	.attractionSubTitle{background:rgba(225,225,225,0.8);width:100%;color:$black;font-weight:bold;text-shadow:1px 1px 1px rgba(225,225,225,0.35);position:absolute;bottom:0;}
+	.attractionCopy{color:$black2;font-weight:normal;display:block;}
 }
 .addOnAtt{
 	background-color:$teal50;
-	.attractionTile{
-		border:1px solid $teal200;
-		.attractionTitle{color:$teal600;}
-	}
+	.attractionTile{border:1px solid $teal200;padding:5px;}
+	.attractionTitle{color:$teal600;}
+	.attractionSubTitle{color:$gray-medium;}
 }
 
 @include screen(320px, 479px)
 {
-	.attractionList{
-		.attractionWrapper{
-			.attractionTile{
-				width:220px;margin:0 0 10px 10px;
-				.attractionTitle, .attractionSubTitle, .attractionSubTitleCity{font-size:14px;}
-				.attractionTitle{
-					img{margin:10px 0 5px 0;}
-				}
-				.attractionSubTitle{margin:5px 5px 10px 5px;line-height:18px;}
-				.attractionSubTitleCity{margin:0 0 3px 0;}
-				.ageGroup{
-					.price{font-weight:normal;font-size:18px;}
-				}
-			}
+	.attractionTile{
+		width:220px;
+		.attractionTitle, .attractionSubTitle, .attractionSubTitleCity{font-size:14px;}
+		.attractionTitle{
+			img{margin:10px 0 5px 0;}
+		}
+		.attractionSubTitle{line-height:18px;}
+		.attractionSubTitleCity{margin:0 0 3px 0;}
+		.ageGroup{
+			.price{font-weight:normal;font-size:18px;}
 		}
 	}
 	#includedAttractionList{
