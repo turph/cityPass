@@ -6,7 +6,7 @@
 	.attractionWrapper{width:10000px;}
 	.attractionTileWrap{float:left;margin:10px;}
 	.attractionTile{
-		position:relative;min-height:320px;
+		position:relative;min-height:300px;
 		@include rounded(3px);background-color:$white;
 	}
 	.attractionTitle, .attractionSubTitle{text-align:center;padding:8px 0;}
@@ -29,7 +29,7 @@
 	}
 }
 .includedAtt{
-	background-color:$cyan50;
+	background-color:$blue50;
 	.attractionTile{border:1px solid $gray-light;background-size:contain;background:center center no-repeat;}
 	.attractionSubTitle{background:rgba(225,225,225,0.8);width:100%;color:$black;font-weight:bold;text-shadow:1px 1px 1px rgba(225,225,225,0.35);position:absolute;bottom:0;}
 	.attractionCopy{color:$black2;font-weight:normal;display:block;}

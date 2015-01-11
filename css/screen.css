@@ -588,7 +588,7 @@ blockquote {
     margin: 10px; }
   .attractionList .attractionTile {
     position: relative;
-    min-height: 320px;
+    min-height: 300px;
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -627,7 +627,7 @@ blockquote {
     margin: 10px 0 0 0; }
 
 .includedAtt {
-  background-color: #E0F7FA; }
+  background-color: #E3F2FD; }
   .includedAtt .attractionTile {
     border: 1px solid #ededed;
     background-size: contain;
