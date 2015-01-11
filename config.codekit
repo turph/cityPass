@@ -926,11 +926,11 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/buyBox.html": {
+	"\/chicago.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/buyBox.html",
+		"inputAbbreviatedPath": "\/chicago.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1136,6 +1136,105 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/carouselImgs\/chicago\/00-chicago.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 172951,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/chicago\/00-chicago.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/chicago\/00-chicago.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carouselImgs\/chicago\/01-chicago.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 145266,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/chicago\/01-chicago.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/chicago\/01-chicago.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carouselImgs\/chicago\/02-chicago.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 207143,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/chicago\/02-chicago.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/chicago\/02-chicago.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carouselImgs\/chicago\/03-chicago.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 177418,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/chicago\/03-chicago.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/chicago\/03-chicago.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carouselImgs\/newYork\/00-newYork.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 119521,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/newYork\/00-newYork.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/newYork\/00-newYork.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carouselImgs\/newYork\/01-newYork.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 201154,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/newYork\/01-newYork.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/newYork\/01-newYork.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carouselImgs\/newYork\/02-newYork.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 298020,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/newYork\/02-newYork.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/newYork\/02-newYork.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carouselImgs\/newYork\/03-newYork.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 243845,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/newYork\/03-newYork.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/newYork\/03-newYork.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/carouselImgs\/newYork\/04-newYork.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 132806,
+		"inputAbbreviatedPath": "\/img\/carouselImgs\/newYork\/04-newYork.jpg",
+		"outputAbbreviatedPath": "\/img\/carouselImgs\/newYork\/04-newYork.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/carouselImgs\/soCal\/00-soCal.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1267,6 +1366,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/newYork.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/newYork.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/sass\/base\/_alerts.scss": {
 		"createSourceMap": 0,
