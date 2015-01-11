@@ -251,8 +251,12 @@ blockquote {
   background-color: #000;
   background-image: url("../img/attractionLogos/header-background.png"); }
   .header img {
+    float: left;
     margin: 7px 0 0 3px;
     height: 30px; }
+  .header form {
+    float: left;
+    margin: 11px 0 0 30px; }
 
 .breadcrumb {
   padding: 0 0 0 3px;

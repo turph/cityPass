@@ -1,6 +1,7 @@
 .header{
 	height:46px;background-color:$black;background-image:url('../img/attractionLogos/header-background.png');
-	img{margin:7px 0 0 3px;height:30px;}
+	img{float:left;margin:7px 0 0 3px;height:30px;}
+	form{float:left;margin:11px 0 0 30px;}
 }
 .breadcrumb{
 	padding:0 0 0 3px;background-color:$black;color:$white;

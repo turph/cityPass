@@ -13,14 +13,14 @@
         effect: "slide"
       },
       pagination: {
-        active: true,
+        active: false,
         effect: "slide"
       },
       play: {
         active: false,
         effect: "slide",
         interval: 4000,
-        auto: true,
+        auto: false,
         swap: true,
         pauseOnHover: false,
         restartDelay: 2500
