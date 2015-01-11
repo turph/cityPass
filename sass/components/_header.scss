@@ -2,6 +2,9 @@
 	height:46px;background-color:$black;background-image:url('../img/attractionLogos/header-background.png');
 	img{float:left;margin:7px 0 0 3px;height:30px;}
 	form{float:left;margin:11px 0 0 30px;}
+	#cityNav{
+		select{background-color:$black;color:$white;border-color:$gray-dark;}
+	}
 }
 .breadcrumb{
 	padding:0 0 0 3px;background-color:$black;color:$white;
@@ -17,6 +20,9 @@
 
 @include screen(320px, 479px)
 {
+	#cityNav{
+		select{font-size:13px;}
+	}
 	.breadcrumb{
 		a{font-size:14px;line-height:24px;}
 	}

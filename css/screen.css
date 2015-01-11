@@ -257,6 +257,10 @@ blockquote {
   .header form {
     float: left;
     margin: 11px 0 0 30px; }
+  .header #cityNav select {
+    background-color: #000;
+    color: #fff;
+    border-color: #666666; }
 
 .breadcrumb {
   padding: 0 0 0 3px;
@@ -275,6 +279,9 @@ blockquote {
       text-decoration: none; }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
+  #cityNav select {
+    font-size: 13px; }
+
   .breadcrumb a {
     font-size: 14px;
     line-height: 24px; } }
@@ -563,18 +570,9 @@ blockquote {
   .slidesjs-pagination a.active {
     background: #404040; }
 
-.carousel .carouselNav {
-  float: right;
-  margin: -13px 5px 0 0;
-  height: 30px; }
-  .carousel .carouselNav a {
-    color: #878787; }
-    .carousel .carouselNav a:hover {
-      text-decoration: none; }
+.carousel {
+  margin: 0 0 15px 0; }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  .carouselNav a {
-    font-size: 13px; } }
 .attractionList {
   float: left;
   padding: 10px 0 0 0;

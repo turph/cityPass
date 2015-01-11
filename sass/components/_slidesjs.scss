@@ -18,20 +18,9 @@
 	}
 	a.active{background:$black2;}
 }
-.carousel{
-	.carouselNav{
-		float:right;margin:-13px 5px 0 0;height:30px;
-		a{
-			color:$gray-medium;
-			&:hover{text-decoration:none;}
-		}
-	}
-}
+.carousel{margin:0 0 15px 0;}
 
 @include screen(320px, 479px){
-	.carouselNav{
-		a{font-size:13px;}
-	}
 }
 @include min-screen(480px){
 }
