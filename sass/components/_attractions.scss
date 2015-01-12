@@ -45,12 +45,6 @@
 	}
 }
 
-.includedAtt{
-	
-	.attractionSubTitle{background:rgba(225,225,225,0.8);width:100%;color:$black;font-weight:bold;text-shadow:1px 1px 1px rgba(225,225,225,0.35);position:absolute;bottom:0;}
-	.attractionCopy{color:$black2;font-weight:normal;display:block;}
-}
-
 
 @include screen(320px, 479px)
 {

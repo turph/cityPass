@@ -665,19 +665,6 @@ blockquote {
     color: #000;
     display: block; }
 
-.includedAtt .attractionSubTitle {
-  background: rgba(225, 225, 225, 0.8);
-  width: 100%;
-  color: #000;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(225, 225, 225, 0.35);
-  position: absolute;
-  bottom: 0; }
-.includedAtt .attractionCopy {
-  color: #404040;
-  font-weight: normal;
-  display: block; }
-
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .attractionTile {
     width: 220px; }
