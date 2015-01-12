@@ -573,91 +573,43 @@ blockquote {
 .carousel {
   margin: 0 0 15px 0; }
 
-.attractionList {
+.slideComponent {
   float: left;
   padding: 10px 0 0 0;
   width: 100%;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) inset;
+  background-color: #E3F2FD;
   overflow: scroll;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch; }
-  .attractionList .attractionWrapper {
+  .slideComponent .slideContainer {
     width: 10000px; }
-  .attractionList .attractionTileWrap {
+  .slideComponent .tileWrap {
     float: left;
     margin: 10px; }
-  .attractionList .attractionTile {
+  .slideComponent .attractionTile {
     position: relative;
     min-height: 300px;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    background-color: #fff; }
-  .attractionList .attractionType {
-    width: 100%; }
-  .attractionList .attractionTitle, .attractionList .attractionSubTitle {
-    text-align: center;
-    padding: 8px 0; }
-  .attractionList .attractionTitle {
-    font-weight: bold; }
-    .attractionList .attractionTitle img {
-      width: 80%; }
-  .attractionList .ageGroup {
-    border-bottom: 1px solid #ededed;
-    display: table;
-    width: 100%; }
-    .attractionList .ageGroup .ageGroupLineItem {
-      margin: 0 10px;
-      display: table-row; }
-    .attractionList .ageGroup .age, .attractionList .ageGroup .price, .attractionList .ageGroup .quantity {
-      display: table-cell;
-      vertical-align: bottom; }
-    .attractionList .ageGroup .price, .attractionList .ageGroup .quantity {
-      text-align: right; }
-    .attractionList .ageGroup .age {
-      font-weight: normal;
-      color: #878787; }
-    .attractionList .ageGroup .save {
-      margin: 0 0 0 5px;
-      display: block;
-      font-weight: normal; }
-    .attractionList .ageGroup .price {
-      margin: 0 0 0 15px; }
-  .attractionList .attractionNav {
-    position: absolute;
-    bottom: 0;
-    margin: 10px 0 0 0; }
-
-.included .attractionType {
-  background-color: rgba(233, 30, 99, 0.9); }
-.included .typeLabel {
-  padding: 3px 5px;
-  color: #fff;
-  display: block; }
-
-.choose .attractionType {
-  background-color: rgba(156, 39, 176, 0.9); }
-.choose .typeLabel {
-  padding: 3px 5px;
-  color: #fff;
-  display: block; }
-
-.addOn .attractionType {
-  background-color: rgba(255, 193, 7, 0.9); }
-.addOn .typeLabel {
-  padding: 3px 5px;
-  color: #000;
-  display: block; }
-
-.includedAtt {
-  background-color: #E3F2FD; }
-  .includedAtt .attractionTile {
+    overflow: hidden;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    background-color: #fff;
     border: 1px solid #ededed;
     background-size: contain;
     background: center center no-repeat; }
-  .includedAtt .attractionSubTitle {
+  .slideComponent .attractionType {
+    width: 100%; }
+  .slideComponent .attractionTitle, .slideComponent .attractionSubTitle {
+    text-align: center;
+    padding: 8px 0; }
+  .slideComponent .attractionTitle {
+    font-weight: bold; }
+    .slideComponent .attractionTitle img {
+      width: 80%; }
+  .slideComponent .attractionSubTitle {
     background: rgba(225, 225, 225, 0.8);
     width: 100%;
     color: #000;
@@ -665,20 +617,66 @@ blockquote {
     text-shadow: 1px 1px 1px rgba(225, 225, 225, 0.35);
     position: absolute;
     bottom: 0; }
-  .includedAtt .attractionCopy {
+  .slideComponent .attractionCopy {
     color: #404040;
     font-weight: normal;
     display: block; }
+  .slideComponent .ageGroup {
+    border-bottom: 1px solid #ededed;
+    display: table;
+    width: 100%; }
+    .slideComponent .ageGroup .ageGroupLineItem {
+      margin: 0 10px;
+      display: table-row; }
+    .slideComponent .ageGroup .age, .slideComponent .ageGroup .price, .slideComponent .ageGroup .quantity {
+      display: table-cell;
+      vertical-align: bottom; }
+    .slideComponent .ageGroup .price, .slideComponent .ageGroup .quantity {
+      text-align: right; }
+    .slideComponent .ageGroup .age {
+      font-weight: normal;
+      color: #878787; }
+    .slideComponent .ageGroup .save {
+      margin: 0 0 0 5px;
+      display: block;
+      font-weight: normal; }
+    .slideComponent .ageGroup .price {
+      margin: 0 0 0 15px; }
+  .slideComponent .attractionNav {
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0 0 0; }
+  .slideComponent .included .attractionType {
+    background-color: rgba(233, 30, 99, 0.9); }
+  .slideComponent .included .typeLabel {
+    padding: 3px 5px;
+    color: #fff;
+    display: block; }
+  .slideComponent .choose .attractionType {
+    background-color: rgba(156, 39, 176, 0.9); }
+  .slideComponent .choose .typeLabel {
+    padding: 3px 5px;
+    color: #fff;
+    display: block; }
+  .slideComponent .addOn .attractionType {
+    background-color: rgba(255, 193, 7, 0.9); }
+  .slideComponent .addOn .typeLabel {
+    padding: 3px 5px;
+    color: #000;
+    display: block; }
 
-.addOnAtt {
-  background-color: #E0F2F1; }
-  .addOnAtt .attractionTile {
-    border: 1px solid #80CBC4;
-    padding: 5px; }
-  .addOnAtt .attractionTitle {
-    color: #00897B; }
-  .addOnAtt .attractionSubTitle {
-    color: #878787; }
+.includedAtt .attractionSubTitle {
+  background: rgba(225, 225, 225, 0.8);
+  width: 100%;
+  color: #000;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(225, 225, 225, 0.35);
+  position: absolute;
+  bottom: 0; }
+.includedAtt .attractionCopy {
+  color: #404040;
+  font-weight: normal;
+  display: block; }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .attractionTile {

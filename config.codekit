@@ -971,6 +971,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/attractionImgs\/chicago\/01-chicago.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53632,
+		"inputAbbreviatedPath": "\/img\/attractionImgs\/chicago\/01-chicago.jpg",
+		"outputAbbreviatedPath": "\/img\/attractionImgs\/chicago\/01-chicago.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/attractionImgs\/chicago\/02-chicago.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 54251,
+		"inputAbbreviatedPath": "\/img\/attractionImgs\/chicago\/02-chicago.jpg",
+		"outputAbbreviatedPath": "\/img\/attractionImgs\/chicago\/02-chicago.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/attractionImgs\/chicago\/03-chicago.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44298,
+		"inputAbbreviatedPath": "\/img\/attractionImgs\/chicago\/03-chicago.jpg",
+		"outputAbbreviatedPath": "\/img\/attractionImgs\/chicago\/03-chicago.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/attractionImgs\/newYork\/01-newYork.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1000,6 +1033,17 @@
 		"initialSize": 41007,
 		"inputAbbreviatedPath": "\/img\/attractionImgs\/newYork\/03-newYork.jpg",
 		"outputAbbreviatedPath": "\/img\/attractionImgs\/newYork\/03-newYork.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/attractionImgs\/newYork\/04-newYork.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34331,
+		"inputAbbreviatedPath": "\/img\/attractionImgs\/newYork\/04-newYork.jpg",
+		"outputAbbreviatedPath": "\/img\/attractionImgs\/newYork\/04-newYork.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1498,6 +1542,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/components\/_addOns.scss",
 		"outputAbbreviatedPath": "\/css\/_addOns.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/components\/_attractions.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/components\/_attractions.scss",
+		"outputAbbreviatedPath": "\/css\/_attractions.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
