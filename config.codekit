@@ -971,6 +971,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/attractionImgs\/newYork\/01-newYork.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27108,
+		"inputAbbreviatedPath": "\/img\/attractionImgs\/newYork\/01-newYork.jpg",
+		"outputAbbreviatedPath": "\/img\/attractionImgs\/newYork\/01-newYork.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/attractionImgs\/newYork\/02-newYork.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 45487,
+		"inputAbbreviatedPath": "\/img\/attractionImgs\/newYork\/02-newYork.jpg",
+		"outputAbbreviatedPath": "\/img\/attractionImgs\/newYork\/02-newYork.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/attractionImgs\/newYork\/03-newYork.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41007,
+		"inputAbbreviatedPath": "\/img\/attractionImgs\/newYork\/03-newYork.jpg",
+		"outputAbbreviatedPath": "\/img\/attractionImgs\/newYork\/03-newYork.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/attractionImgs\/soCal\/disneyland1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1481,22 +1514,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/components\/_buybox.scss",
 		"outputAbbreviatedPath": "\/css\/_buybox.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/sass\/components\/_carousel.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/components\/_carousel.scss",
-		"outputAbbreviatedPath": "\/css\/_carousel.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
