@@ -747,3 +747,27 @@ blockquote {
     line-height: 16px; }
   .featureList .featureDetails p {
     font-size: 14px; } }
+.detailOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .detailOverlay .detailTitle {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%; }
+  .detailOverlay .detailContent {
+    text-align: center;
+    background-color: #fff;
+    position: static; }
+    .detailOverlay .detailContent img {
+      margin-top: 80px; }
+  .detailOverlay .detailFooter {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%; }
+    .detailOverlay .detailFooter .btn {
+      margin: 12px; }

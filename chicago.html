@@ -113,7 +113,32 @@
 
 	})
 </script>
+<script>
+	$(document).ready (function () {
+		$('#sheddOpen').click (function () {
+			$('#sheddDetails').toggle ();
+			return false;
+		});
+		$('#sheddClose').click (function () {
+			$('#sheddDetails').toggle ();
+			return false;
+		});
+	})
+</script>
 	<body class="product">
+		<div id="sheddDetails" class="detailOverlay" style="display:none;">
+			<div>
+			<div class="detailTitle">
+				<div class="sectionTitle">Shedd Aquarium<span class="sectionSubTitle">Attraction Details</span></div>
+			</div>
+			<div class="detailContent">
+				<img src="img/carouselImgs/chicago/shedd-details.jpg" width="285" height="1020" alt="Shedd Details">
+			</div>
+			<div class="detailFooter">
+				<div id="sheddClose" class="btn buy">Close</div>
+			</div>
+			</div>
+		</div>
 		<div class="header">
 			<img src="img/cpLogo.png" alt="CpLogo">
 			<form id="cityNav">
@@ -231,6 +256,7 @@
 			<div class="slideComponent">
 				<div class="slideContainer">
 					<div class="tileWrap included"><!-- Tile 1 -->
+						<a id="sheddOpen" href="">
 						<div class="attractionTile" style="background-image:url(http://turph.s3.amazonaws.com/Freelance/cityPass/img/attractionImgs/chicago/01-chicago.jpg)">
 							<div class="attractionType"><span class="typeLabel">Included</span></div>
 							<div class="attractionSubTitle">
@@ -238,6 +264,7 @@
 								<span class="attractionCopy">Travel the world in 80 habitats in Waters of the World galleries. VIP entry to Waters of the World galleries & special exhibits.</span>
 							</div>
 						</div>
+						</a>
 					</div>
 					<div class="tileWrap included"><!-- Tile 2 -->
 						<div class="attractionTile" style="background-image:url(http://turph.s3.amazonaws.com/Freelance/cityPass/img/attractionImgs/chicago/02-chicago.jpg)">
